@@ -8,10 +8,10 @@
 <!-- CSS
 ================================================== -->
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../css/bootstrap.css">
-<link rel="stylesheet" href="../css/bootstrap-responsive.css">
-<link rel="stylesheet" href="../css/prettyPhoto.css" />
-<link rel="stylesheet" href="../css/custom-styles.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/prettyPhoto.css" />
+<link rel="stylesheet" href="css/custom-styles.css">
 
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,19 +20,19 @@
 
 <!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="../img/favicon.ico">
-<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
 <!-- JS
 ================================================== -->
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="../js/jquery.easing.1.3.js"></script>
-<script src="../js/bootstrap.js"></script>
-<script src="../js/jquery.prettyPhoto.js"></script>
-<script src="../js/jquery.quicksand.js"></script>
-<script src="../js/jquery.custom.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.quicksand.js"></script>
+<script src="js/jquery.custom.js"></script>
 
 
 </head>
@@ -48,8 +48,8 @@
             <!-- Logo
             ================================================== -->
             <div class="span5 logo">
-                <a href="../index.htm"><img src="../img/ParkC/logo.jpg" alt="" width="120" /></a>
-                <h5><p style="font-size:30px"> NeuroWA</p></h5>
+                <a href="index.htm"><img src="img/ParkC/logo.jpg" alt="" width="120" /></a>
+                <h5><p style="font-size:30px">NeuroWA</p></h5>
             </div>
             
             <!-- Main Navigation
@@ -58,20 +58,11 @@
                     <div class="navbar hidden-phone">
                     
                         <ul class="nav">
-                           <li><a href="../index.htm">Home</a></li>
-                           <li class="active"><a href="Projects/Landing.htm">Projects</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="Researchers-Page.htm">Researchers<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="Staff-Page">Staff & Supervisors</a></li>
-                                    <li><a href="Postgrad-Page">Postgraduates</a></li>
-                                    <li><a href="Honours-Page">Undergraduates</a></li>
-                                </ul>
-                            </li>
-                            
-                             <li><a href"Blog-Page">Blog</a></li> 
-                             
-                             <li class="dropdown">
+                           <li><a href="index.htm">Home</a></li>
+                           <li><a href="Projects/Landing.htm">Projects</a></li>
+                           <li class="active"><a href="Researchers.htm">Researchers</a></li>
+                           <li><a href"Blog-Page">Blog</a></li> 
+                           <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="Gallery-Pages.htm">Gallery <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="LabPictures.htm">The Lab</a></li>
@@ -91,12 +82,9 @@
                         <div class="mobile-nav-select">
                             <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                                 <option value="">Navigate...</option>
-                                <option value="../index.htm">Home</option>
+                                <option value="index.htm">Home</option>
                                 <option value="Landing.htm">Projects</option>
-                                <option value="Researchers-Page">Researchers</option>
-                                    <option value="Staff-Page">- Staff & Supervisors</option>
-                                    <option value="Postgrad-Page">- Postgraduates</option>
-                                    <option value="Honours-Page">- Undergraduates</option>
+                                <option value="Researchers.htm">Researchers</option>
                                 <option value="Blog-Page">Blog</option>
                                 <option value="Gallery-Pages">Gallery</option>
                                     <option value="LabPictures">- The Lab</option>
@@ -113,59 +101,220 @@
             </div><!-- End Header -->
      
      
-    <!-- Accordian (Collapse) ================================================== --> 
+    <!-- Accordian (Staff) ================================================== --> 
     <div class="row">
         <div class="span12">
-            <h6 class="title-bg">Staff: <small>Supervisors and Support Staff</small></h6>
+            <h3 class="title-bg">Staff: <small style="font-size:23px">Supervisors and Support Staff</small></h3>
 
             <div class="accordion" id="accordion2">
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#Andrea">
 							Dr Andrea Loftus
                         </a>
                     </div>
-                    <div id="collapseOne" class="accordion-body collapse in">
+                    <div id="Andrea" class="accordion-body collapse in">
                         <div class="accordion-inner">
-							<div class="span4">
-								<img src="img/ParkC/logo">
-							</div>
-							
-							<div class="span8">
-								<h3>Dr Andrea Loftus</h3>
-								<p class="lead"> Qualifications</p>
-								<p> bio bio bio bio bio </p>
-							</div>
+								<img src="img/Staff/Andrea.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">Dr Andrea Loftus <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                        Collapsible Group Item #2
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#Natalie">
+							A/Prof Natalie Gasson
                         </a>
                     </div>
-                    <div id="collapseTwo" class="accordion-body collapse">
+                    <div id="Natalie" class="accordion-body collapse">
                         <div class="accordion-inner">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
+							<img src="img/Staff/Natalie.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">A/Prof Natalie Gasson <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
                         </div>
                     </div>
                 </div>
 
                  <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                        Collapsible Group Item #3
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#Romola">
+							A/Prof Romola Bucks
                         </a>
                     </div>
-                    <div id="collapseThree" class="accordion-body collapse">
+                    <div id="Romola" class="accordion-body collapse">
                         <div class="accordion-inner">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
+							<img src="img/Staff/Romola.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">A/Prof Romola Bucks <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#Meghan">
+							Dr Meghan Thomas
+                        </a>
+                    </div>
+                    <div id="Meghan" class="accordion-body collapse">
+                        <div class="accordion-inner">
+							<img src="img/Staff/Meghan.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">Dr Meghan Thomas <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
                         </div>
                     </div>
                 </div>
 
+            </div>
+
+        </div>
+	</div>
+	
+    <!-- Accordian (Postgrads) ================================================== --> 
+    <div class="row">
+        <div class="span12">
+            <h3 class="title-bg">Postgrads: <small style="font-size:23px">Doctoral and Masters Students</small></h3>
+
+            <div class="accordion" id="accordion3">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Emily">
+							Emily Corti
+                        </a>
+                    </div>
+                    <div id="Emily" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+								<img src="img/Postgrads/Emily.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">Emily Corti <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Blake">
+							Blake Lawrence
+                        </a>
+                    </div>
+                    <div id="Blake" class="accordion-body collapse">
+                        <div class="accordion-inner">
+							<img src="img/Postgrads/Blake.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">Blake Lawrence <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Leon">
+							Leon Booth
+                        </a>
+                    </div>
+                    <div id="Leon" class="accordion-body collapse">
+                        <div class="accordion-inner">
+							<img src="img/Postgrads/Leon.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">Leon Booth <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Maria">
+							Maria Pushpanathan
+                        </a>
+                    </div>
+                    <div id="Maria" class="accordion-body collapse">
+                        <div class="accordion-inner">
+							<img src="img/Postgrads/Maria.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">Maria Pushpanathan <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Andrew">
+							Andrew Johnson
+                        </a>
+                    </div>
+                    <div id="Andrew" class="accordion-body collapse">
+                        <div class="accordion-inner">
+							<img src="img/Postgrads/Andrew.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">Andrew Johnson <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+	</div>
+	
+	<!-- Accordian (Undergrads) ================================================== --> 
+    <div class="row">
+        <div class="span12">
+            <h3 class="title-bg">Undergrads: <small style="font-size:23px">Honours Students</small></h3>
+
+            <div class="accordion" id="accordion4">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#Damien">
+							Damien Batchelor
+                        </a>
+                    </div>
+                    <div id="Damien" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+								<img src="img/Undergrads/Damien.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">Damien Batchelor <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#Ben">
+							Benjamin Jones
+                        </a>
+                    </div>
+                    <div id="Ben" class="accordion-body collapse">
+                        <div class="accordion-inner">
+							<img src="img/Undergrads/Ben.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
+								<h3 class="span8">Benjamin Jones <small style="padding-left:10px">Qualifications</small></h3>
+								<div class="span8">
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p>
+								</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
