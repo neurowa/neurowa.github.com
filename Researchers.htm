@@ -55,6 +55,8 @@
     var url = document.location.toString();
     if (url.match('#')) {
         $('.nav-tabs a[href=#' + url.split('#')[1] + ']').tab('show');
+		window.location.href = "#"+url.split('#')[2];
+
     }
 
     //Change hash for page-reload
