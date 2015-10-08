@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+<?php include 'thisfile.php'; ?>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>NeuroWA</title>
@@ -143,25 +144,53 @@
         <!-- Post Comments
         ================================================== --> 
             <section class="comments">
-                <h4 class="title-bg"><a name="comments"></a># Comments so far</h4>
-               <ul>
-               </ul>
-                <div class="comment-form-container">
-                    <h6>Leave a Comment</h6>
-                    <form action="#" id="comment-form">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-user"></i></span>
-                            <input class="span4" id="prependedInput" size="16" type="text" placeholder="Name">
-                        </div>
-                        <textarea class="span6"></textarea>
-                        <div class="row">
-                            <div class="span2">
-                                <input type="submit" class="btn btn-inverse" value="Post My Comment">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-				
+				<form id="my_form" method="post" action="">
+						<label>Enter your name</label>
+						<br>
+						<input type="text" name="username" id="username">
+						<br>
+						<label>Enter mssg here</label>
+						<br>
+						<textarea name="mssg" id="mssg" cols="40" rows="4"></textarea>
+						<br>
+						<button name="submit" id="submit" value="submit" />submit</button>
+					</form>
+
+					<div id="put_here">
+						<table border="1" id="put_here_table">
+						<!--messages will be added here-->
+						</table>
+					</div>
+
+					<script>
+						$("#my_form").submit(function(e){  //handle the form submission
+							e.preventDefault();
+							var data = $(this).serialize();
+							$.ajax({
+								url: "./thisfile.php",
+								method: "POST",
+								data: data,
+								success: function(response){
+									$("#put_here_table").append('<tr><td>'+$("#username").val()+'</td><td>'+$("#mssg").val()+'</td></tr>');
+									$("#mssg").val("");//clear the text box
+								}
+							});
+						});
+						$.ajax({  //load the messages
+							dataType: "json",
+							url: "./thisfile.php",
+							method: "POST",
+							data: {"read":"messages"},
+							success: function(messages){
+								if(messages.length){
+									$("#put_here_table").append('<tr><th>Name</th><th>Message</th></tr>');
+									$.each(messages,function(i,msg){
+										$("#put_here_table").append('<tr><td>'+msg['username']+'</td><td>'+msg['mssg']+'</td></tr>');
+									});
+								}
+							}
+						});
+					</script>
 
 
 			</section><!-- Close comments section-->
