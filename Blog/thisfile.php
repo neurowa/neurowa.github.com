@@ -1,6 +1,5 @@
 <?php
     $file = 'messages.json';
-    touch($file);       //create file if not exist
     $messages = json_decode(file_get_contents($file),true);
     if(empty($messages)){
         $messages = array();
