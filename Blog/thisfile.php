@@ -1,5 +1,5 @@
 <?php
-    $file = 'messages.json';
+    $file = './messages.json';
     $messages = json_decode(file_get_contents($file),true);
     if(empty($messages)){
         $messages = array();
