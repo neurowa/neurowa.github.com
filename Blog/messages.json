@@ -1,13 +1,12 @@
 [{
-	"username":"Test1",
-	"mssg":"Testing testing testing"
+	"Name":"Person",
+	"Message":"Wow"
 },
 {
-	"username":"Test2",
-	"mssg":"Testing 3testing tes4ting"
+	"Name":"Person",
+	"Message":"Wow"
 },
 {
-	"username":"Test2",
-	"mssg":"Testing 3testing tes4ting"
-
-}]
+	"Name":"Person",
+	"Message":"Wow"
+},]
