@@ -188,6 +188,9 @@
 									url: "./thisfile.php",
 									method: "POST",
 									data: data,
+									success: function(response){
+										 $("#Message").val("");//clear the text box
+										 $("#Username").val("");//clear the text box
 								});
 							});
 						</script>
