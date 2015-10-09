@@ -159,8 +159,8 @@
 					$("#result").html('');
 					for (var i = 0; i < json.length; i++) {
 				 
-					  $("#result").append('<p>username  : ' + json[i].username   + '</p>');
-					  $("#result").append('<p>mssg : ' + json[i].mssg  + '</p>');
+					  $("#result").append(json[i].Name  + '</p>');
+					  $("#result").append(json[i].Message + '</p>');
 					  $("#result").append('<hr>');
 					}
 				  });}
