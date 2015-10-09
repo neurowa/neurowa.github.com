@@ -13,9 +13,9 @@
 		
         //file_put_contents($file,json_encode($messages),FILE_APPEND);
         exit;
-    //}elseif(isset($_POST['read'])&&$_POST['read']=='messages'){
-    //    echo json_encode($messages);
-    //    exit;
-    //}
+		}elseif(isset($_POST['read'])&&$_POST['read']=='messages'){
+		   echo json_encode($messages);
+		   exit;
+		}
 
 ?>
