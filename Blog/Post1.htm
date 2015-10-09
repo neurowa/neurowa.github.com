@@ -152,9 +152,10 @@
 			<div id="result"></div>
 						
 
+
 			<script>
 				window.onload = function(){
-				var file = $("messages.json").val();
+				var file = $("./messages.json").val();
 				var url = document.location.toString();
 				 
 				  $.getJSON(file, function(json) {
