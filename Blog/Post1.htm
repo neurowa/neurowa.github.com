@@ -152,13 +152,9 @@
 			<div id="result"></div>
 						
 
-			<select id="data">
-					<option value="./messages.json">messages.json</option>
-			</select> 
-
 			<script>
 				window.onload = function(){
-				var file = $("#data").val();
+				var file = $("messages.json").val();
 				var url = document.location.toString();
 				 
 				  $.getJSON(file, function(json) {
