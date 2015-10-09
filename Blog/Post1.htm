@@ -150,7 +150,6 @@
         ================================================== --> 
             <section class="comments well">
 			<div id="result"></div>
-
 			<script>
 				window.onload = function(){
 				var file = "./messages.json";			 
@@ -165,6 +164,33 @@
 					}
 				  });}
 			</script>
+			
+			<div class="comment-form-container">
+                    <h6>Leave a Comment</h6>
+                    <form id="my_form" action="" method="POST">
+                        <div class="input-prepend">
+                            <span class="add-on"><i class="icon-user"></i></span>
+                            <input name="Username" class="span4" id="Username" size="16" type="text" placeholder="Name">
+                        </div>
+                        <textarea name="Message" id="Message" class="span6"></textarea>
+                        <div class="row">
+                            <div class="span2">
+                                <input type="submit" id="submit" class="btn btn-inverse" value="submit">
+                            </div>
+                        </div>
+                    </form>
+					
+					    <script>
+							$("#my_form").submit(function(e){  //handle the form submission
+								e.preventDefault();
+								var data = $(this).serialize();
+								$.ajax({
+									url: "./thisfile.php",
+									method: "POST",
+									data: data,
+								});
+							});
+                </div>
 
 
 
