@@ -4897,11 +4897,11 @@ input[type="submit"].btn.btn-mini {
 
 .modal {
   position: fixed;
-  top: 50%;
-  left: 40%;
+  top: 40%;
+  left: 50%;
   z-index: 1050;
-  width: 1000px;
-  margin: -250px 0 0 -250px;
+  width: 100vh;
+  margin: -40vh 0 0 -50vh;
   overflow: auto;
   background-color: #ffffff;
   border: 1px solid #999;
@@ -4945,7 +4945,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .modal-body {
-  max-height: 400px;
+  max-height: 80vh;
   padding: 15px;
   overflow-y: auto;
 }
