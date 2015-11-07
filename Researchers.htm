@@ -34,7 +34,20 @@
 <script src="js/jquery.quicksand.js"></script>
 <script src="js/jquery.custom.js"></script>
 
+<script type="text/javascript">
+jQuery(document).ready(function($){
 
+	/* prepend menu icon */
+	$('#nav-wrap').prepend('<div id="menu-icon">Menu</div>');
+	
+	/* toggle nav */
+	$("#menu-icon").on("click", function(){
+		$("#nav").slideToggle();
+		$(this).toggleClass("active");
+	});
+
+});
+</script>
 
 
 
@@ -75,32 +88,32 @@
             <!-- Main Navigation
             ================================================== -->
             <div class="span5 navigation" style="float:right" style="padding-top:5px">
-                    <div class="navbar hidden-phone">
+                <div class="navbar hidden-phone">
             
-            	<ul class="nav">
-                   <li><a href="index.htm">Home</a></li>
-					<li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="Projects/Parkc.htm">ParkC</a></li>
-                            <li><a href="Projects/Pain.htm">Chronic Pain</a></li>
-							<li><a href="Projects/PDMCI.htm">PD MCI</a></li>
-							<li><a href="Projects/PDImpulsivity.htm">Impulsivity in PD</a></li>
-							<li><a href="Projects/PDSleep.htm">PD Sleep</a></li>
-							<li><a href="Projects.htm">All</a></li>
-                        </ul>
-                     </li>
-                   <li class="active"><a href="Researchers.htm">Researchers</a></li>
+					<ul class="nav">
+					   <li><a href="index.htm">Home</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="Projects/Parkc.htm">ParkC</a></li>
+								<li><a href="Projects/Pain.htm">Chronic Pain</a></li>
+								<li><a href="Projects/PDMCI.htm">PD MCI</a></li>
+								<li><a href="Projects/PDImpulsivity.htm">Impulsivity in PD</a></li>
+								<li><a href="Projects/PDSleep.htm">PD Sleep</a></li>
+								<li><a href="Projects.htm">All</a></li>
+							</ul>
+						 </li>
+					   <li class="active"><a href="Researchers.htm">Researchers</a></li>
 
-                     <li><a href="Blog.htm">Blog</a></li> 
-                     
-                     <li><a href="Gallery.htm">Gallery</a></li>
-                     
-                     
-                      <li><a href="Contact.htm">Contact Us</a></li>
-         
-           		</ul>
-            </div>
+						 <li><a href="Blog.htm">Blog</a></li> 
+						 
+						 <li><a href="Gallery.htm">Gallery</a></li>
+						 
+						 
+						  <li><a href="Contact.htm">Contact Us</a></li>
+			 
+					</ul>
+				</div>
         
                     <!-- Mobile Nav
                     ================================================== -->
@@ -116,7 +129,7 @@
                                 <option value="Contact.htm">Contact Us</option>
                             </select>
                         </div>
-                        </form>
+                    </form>
                 
             </div>
             
@@ -126,23 +139,24 @@
     
     <!-- Accordian (Staff) ================================================== --> 
     <div class="row">
-	
-	
-		<ul class="nav nav-tabs">
-			<li class="active"><a href="#Staff" data-toggle="tab">Staff</a></li>
-			<li><a href="#Postgrad" data-toggle="tab">Postgraduates</a></li>
-			<li><a href="#Undergrad" data-toggle="tab">Undergrads</a></li>
-			<li><a href="#PastStudents" data-toggle="tab">Past Students</a></li>
-		</ul>
-	
 
 		<div class="tab-content">
 				<div class="tab-pane active" id="Staff">
+				
+					<div class="nav-wrap" style="text-align:center;margin-bottom:10px;">
+						<button class="btn btn-inverse active" href="#Staff" data-toggle="tab">Staff</button>
+						<button class="btn btn-inverse" href="#Postgrad" data-toggle="tab">Postgraduates</button>
+						<button class="btn btn-inverse" href="#Undergrad" data-toggle="tab">Undergrads</button>
+						<button class="btn btn-inverse" href="#PastStudents" data-toggle="tab">Past Students</button>
+					</div>
+					
+
+					
 					<div class="accordion span10 offset1" id="accordion2">
 						<div class="well accordion-group">
 
 							<div class="accordion-heading" style="text-align:left" >
-									<div class="span4"><img src="img/Staff/Andrea.jpg" style="width:270px;height:200px;"/></div>
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Andrea.jpg" style="width:270px;height:200px;"/></div>
 									<h3>Dr Andrea Loftus</br><small>Qualifications</small></h3>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
 								<a class="span2" data-toggle="collapse" data-parent="#accordion2" href="#Andrea" style="font-size:16px;float:right">
@@ -157,7 +171,7 @@
 						<div class="well accordion-group">
 
 							<div class="accordion-heading" style="text-align:left" >
-									<div class="span4"><img src="img/Staff/Natalie.jpg" style="height:235px" /></div>
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Natalie.jpg" style="height:235px" /></div>
 									<h3>A/Prof Natalie Gasson</br> <small>Qualifications</small></h3>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
 								<a class="span2" data-toggle="collapse" data-parent="#accordion2" href="#Natalie" style="font-size:16px;float:right">
@@ -172,7 +186,7 @@
 						<div class="well accordion-group">
 
 							<div class="accordion-heading" id="Romola" style="text-align:left" >
-									<div class="span4"><img src="img/Staff/Romola.jpg" style="height:250px;" /></div>
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Romola2.jpg" style="height:250px;" /></div>
 									<h3>A/Prof Romola Bucks</br><small>Qualifications &nbsp;&nbsp;&nbsp;</small></h3>
 									<p style="font-size:15px">
 										One of the founding members of the research laboratory, A/Prof Romola Bucks is a highly-regarded clinician
@@ -216,7 +230,7 @@
 						<div class="well accordion-group">
 
 							<div class="accordion-heading" style="text-align:left" >
-									<div class="span4"><img src="img/Staff/Meghan.jpg" style="height:250px;" /></div>
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Meghan.jpg" style="height:250px;" /></div>
 									<h3>Dr Meghan Thomas</br><small>Qualifications</small></h3>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
 								<a class="span2" data-toggle="collapse" data-parent="#accordion2" href="#Meghan" style="font-size:16px;float:right">
@@ -231,7 +245,7 @@
 						<div class="well accordion-group">
 
 							<div class="accordion-heading" style="text-align:left" >
-									<div class="span4"><img src="img/Staff/Bob.jpg" style="padding-right:5px;height:220px;" /></div>
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Bob.jpg" style="padding-right:5px;height:220px;" /></div>
 									<h3>Dr Robert Kane</br><small>Qualifications</small></h3>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
 								<a class="span2" data-toggle="collapse" data-parent="#accordion2" href="#Bob" style="font-size:16px;float:right">
@@ -245,101 +259,102 @@
 					</div>
 				</div>
 		
-				<div class="tab-pane" id="Postgrad">
-					<div class="accordion" id="accordion3">
-							<div class="accordion-group">
-								<div class="accordion-heading">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Emily">
-										Emily Corti
-									</a>
-								</div>
-								<div id="Emily" class="accordion-body collapse in">
-									<div class="accordion-inner">
-											<img src="img/Postgrads/Emily.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
-											<h3 class="span8">Emily Corti <small style="padding-left:10px">Qualifications</small></br></h3>
-												<div class="span5">
-													<p style="font-size:15px">bio bio bio bio bio bio bio</br>
-														<a target="_blank" href="People/Emily/Emily Corti 2013.pdf">Honours Thesis</a></p>
-												</div>
-									</div>
-								</div>
-							</div>
+				<div class="tab-pane" id="Postgrad">	
 
-							<div class="accordion-group">
-								<div class="accordion-heading">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Blake">
-										Blake Lawrence
-									</a>
-								</div>
-								<div id="Blake" class="accordion-body collapse in">
-									<div class="accordion-inner">
-										<img src="img/Postgrads/Blake.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
-										<h3 class="span5">Blake Lawrence <small style="padding-left:10px">Qualifications</small></h3></br>
-										<iframe class="span4" style="float:right" src="https://www.youtube.com/v/qTyMd0sXvL4?html5=1" frameborder="1" height="240" allowfullscreen></iframe>
-										<div class="span5">
-											<p style="font-size:15px">bio bio bio bio bio bio bio</p>
-										</div>
-										
-									</div>
-								</div>
-							</div>
+					<div class="nav-wrap" style="text-align:center;margin-bottom:10px;">
+						<button class="btn btn-inverse" href="#Staff" data-toggle="tab">Staff</button>
+						<button class="btn btn-inverse active" href="#Postgrad" data-toggle="tab">Postgraduates</button>
+						<button class="btn btn-inverse" href="#Undergrad" data-toggle="tab">Undergrads</button>
+						<button class="btn btn-inverse" href="#PastStudents" data-toggle="tab">Past Students</button>
+					</div>				
 
-							<div class="accordion-group">
-								<div class="accordion-heading">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Leon">
-										Leon Booth
-									</a>
-								</div>
-								<div id="Leon" class="accordion-body collapse in">
-									<div class="accordion-inner">
-										<img src="img/Postgrads/Leon.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
-											<h3 class="span8">Leon Booth <small style="padding-left:10px">Qualifications</small></h3>
-											<div class="span8">
-												<p style="font-size:15px">bio bio bio bio bio bio bio</br>
-												<a target="_blank" href="People/Leon/Leon Booth 2014.pdf">Honours Thesis</a></p>
-											</div>
-									</div>
-								</div>
+					<div class="accordion span10 offset1" id="accordion3">
+						<div class="well accordion-group">
+							<div class="accordion-heading" style="text-align:left" >
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Emily.jpg" style="height:270px;"/></div>
+									<h3>Emily Corti</br><small>BPsych (Hons)</small></h3>
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
+								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Emily" style="font-size:16px;float:right">
+									Show/Hide More
+								</a>
 							</div>
-							
-							<div class="accordion-group">
-								<div class="accordion-heading">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Maria">
-										Maria Pushpanathan
-									</a>
-								</div>
-								<div id="Maria" class="accordion-body collapse in">
-									<div class="accordion-inner">
-										<img src="img/Postgrads/Maria.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
-											<h3 class="span8">Maria Pushpanathan <small style="padding-left:10px">Qualifications</small></h3>
-											<div class="span8">
-												<p style="font-size:15px">bio bio bio bio bio bio bio</p>
-											</div>
-									</div>
-								</div>
+							<div id="Emily" class="accordion-body collapse">
+
+									</br></br><p style="font-size:15px">MORE bio bio bio bio bio bio bio</p></br></br></br></br>
 							</div>
+						</div>
+
+						<div class="well accordion-group">
+							<div class="accordion-heading" style="text-align:left" >
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Blake.jpg" style="width:240px"/></div>
+									<h3>Blake Lawrence</br><small>BPsych (Hons)</small></h3>
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
+								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Blake" style="font-size:16px;float:right">
+									Show/Hide More
+								</a>
+							</div>
+							<div id="Blake" class="accordion-body collapse">
+
+									</br></br><p style="font-size:15px">MORE bio bio bio bio bio bio bio</p></br></br></br></br>
+							</div>
+						</div>
+
+						<div class="well accordion-group">
+							<div class="accordion-heading" style="text-align:left" >
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Leon.jpg" style="height:270px;"/></div>
+									<h3>Leon Booth</br><small>BPsych (Hons)</small></h3>
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
+								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Leon" style="font-size:16px;float:right">
+									Show/Hide More
+								</a>
+							</div>
+							<div id="Leon" class="accordion-body collapse">
+
+									</br></br><p style="font-size:15px">MORE bio bio bio bio bio bio bio</p></br></br></br></br>
+							</div>
+						</div>
 							
-							<div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#Andrew">
-							Andrew Johnson
-                        </a>
-                    </div>
-                    <div id="Andrew" class="accordion-body collapse in">
-                        <div class="accordion-inner">
-							<img src="img/Postgrads/Andrew.jpg" class="span2" width="135" height="100" style="padding-bottom:10px" />
-								<h3 class="span8">Andrew Johnson <small style="padding-left:10px">Qualifications</small></h3>
-								<div class="span8">
-									<p style="font-size:15px">bio bio bio bio bio bio bio</br>
-									<a target="_blank" href="People/Andrew/Andrew Johnson - Thesis 2014.pdf">Honours Thesis</a></p>
-								</div>
-                        </div>
-                    </div>
-                </div>
+						<div class="well accordion-group">
+							<div class="accordion-heading" style="text-align:left" >
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Maria.jpg" style="width:270px;height:200px;"/></div>
+									<h3>Maria Pushpanathan</br><small>Qualifications</small></h3>
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
+								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Maria" style="font-size:16px;float:right">
+									Show/Hide More
+								</a>
+							</div>
+							<div id="Maria" class="accordion-body collapse">
+
+									</br></br><p style="font-size:15px">MORE bio bio bio bio bio bio bio</p></br></br></br></br>
+							</div>
+						</div>
+							
+						<div class="well accordion-group">
+							<div class="accordion-heading" style="text-align:left" >
+									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Andrew.jpg" style="width:270px;height:200px;"/></div>
+									<h3>Andrew Johnson</br><small>BPsych (Hons)</small></h3>
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
+								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Andrew" style="font-size:16px;float:right">
+									Show/Hide More
+								</a>
+							</div>
+							<div id="Andrew" class="accordion-body collapse">
+
+									</br></br><p style="font-size:15px">MORE bio bio bio bio bio bio bio</p></br></br></br></br>
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="tab-pane" id="Undergrad">
+				
+					<div class="nav-wrap" style="text-align:center;margin-bottom:10px;">
+						<button class="btn btn-inverse" href="#Staff" data-toggle="tab">Staff</button>
+						<button class="btn btn-inverse" href="#Postgrad" data-toggle="tab">Postgraduates</button>
+						<button class="btn btn-inverse active" href="#Undergrad" data-toggle="tab">Undergrads</button>
+						<button class="btn btn-inverse" href="#PastStudents" data-toggle="tab">Past Students</button>
+					</div>					
+				
 					<div class="accordion" id="accordion4">
 						<div class="accordion-group">
 							<div class="accordion-heading">
@@ -377,6 +392,14 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="PastStudents">
+				
+					<div class="nav-wrap" style="text-align:center;margin-bottom:10px;">
+						<button class="btn btn-inverse" href="#Staff" data-toggle="tab">Staff</button>
+						<button class="btn btn-inverse" href="#Postgrad" data-toggle="tab">Postgraduates</button>
+						<button class="btn btn-inverse" href="#Undergrad" data-toggle="tab">Undergrads</button>
+						<button class="btn btn-inverse active" href="#PastStudents" data-toggle="tab">Past Students</button>
+					</div>					
+				
 					<div class="accordion" id="accordion5">
 					<div class="accordion-group">
 						<div class="accordion-heading">
