@@ -55,6 +55,11 @@
         window.location.hash = e.target.hash;
     }); 
 	} </script>
+
+	<script>
+		$('#Header').load('M_Header.htm #head');
+		$('#Footer').load('M_Footer.htm #foot');
+	</script>
 	
 	
 	<div class="color-bar-1"></div>
@@ -62,65 +67,9 @@
     
     <div class="container">
     
-          <div class="row header"><!-- Begin Header -->
           
-            <!-- Logo
-            ================================================== -->
-            <div class="span6">
-                <a href="index.htm"><img src="img/ParkC/Logo.png" alt="" /></a>
-            </div>
-            
-            <!-- Main Navigation
-            ================================================== -->
-            <div class="span5 navigation" style="float:right" style="padding-top:5px">
-                <div class="navbar hidden-phone">
-            
-					<ul class="nav">
-					   <li><a href="index.htm">Home</a></li>
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="Projects/Parkc.htm">ParkC</a></li>
-								<li><a href="Projects/Pain.htm">Chronic Pain</a></li>
-								<li><a href="Projects/PDMCI.htm">PD MCI</a></li>
-								<li><a href="Projects/PDImpulsivity.htm">Impulsivity in PD</a></li>
-								<li><a href="Projects/PDSleep.htm">PD Sleep</a></li>
-								<li><a href="Projects.htm">All</a></li>
-							</ul>
-						 </li>
-					   <li class="active"><a href="Researchers.htm">Researchers</a></li>
+	<div id="Header"></div>
 
-						 <li><a href="Blog.htm">Blog</a></li> 
-						 
-						 <li><a href="Gallery.htm">Gallery</a></li>
-						 
-						 
-						  <li><a href="Contact.htm">Contact Us</a></li>
-			 
-					</ul>
-				</div>
-        
-                    <!-- Mobile Nav
-                    ================================================== -->
-                    <form action="#" id="mobile-nav" class="visible-phone" style="text-align:center">
-                        <div class="mobile-nav-select">
-                            <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                                <option value="">Navigate...</option>
-                                <option value="index.htm">Home</option>
-                                <option value="Projects.htm">Projects</option>
-                                <option value="Researchers.htm">Researchers</option>
-                                <option value="Blog.htm">Blog</option>
-                                <option value="Gallery.htm">Gallery</option>
-                                <option value="Contact.htm">Contact Us</option>
-                            </select>
-                        </div>
-                    </form>
-                
-            </div>
-            
-            
-            
-            </div><!-- End Header -->
     
     <!-- Accordian (Staff) ================================================== --> 
     <div class="row">
@@ -451,9 +400,7 @@
 
 <div id="Footer"></div>	
 	
-<script>
-$('#Footer').load('Footer.htm #foot');
-</script>
+
 
 	
 
