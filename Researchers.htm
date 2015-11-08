@@ -102,7 +102,7 @@
         
                     <!-- Mobile Nav
                     ================================================== -->
-                    <form action="#" id="mobile-nav" class="visible-phone">
+                    <form action="#" id="mobile-nav" class="visible-phone" style="text-align:center">
                         <div class="mobile-nav-select">
                             <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                                 <option value="">Navigate...</option>
@@ -139,9 +139,9 @@
 
 							<div class="accordion-heading" id="Andrea" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Andrea.jpg" style="width:270px;height:200px;"/></div>
-									<h3>Dr Andrea Loftus</br><small>Qualifications</small></h3>
+									<p><h3>Dr Andrea Loftus</h3><strong>Qualifications</strong></p>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br>
-								<a data-toggle="collapse" data-parent="#accordion2" href="#Andreach">Read more</a>
+								<a data-toggle="collapse" data-parent="#accordion2" href="#Andreach">Read more</a></br></br>
 							</div>
 							<div id="Andreach" class="accordion-body collapse">
 
@@ -152,12 +152,15 @@
 
 							<div class="accordion-heading" id="Natalie" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Natalie.jpg" style="height:235px" /></div>
-									<h3>A/Prof Natalie Gasson</br> <small>Qualifications</small></h3>
+									<p><h3>A/Prof Natalie Gasson</h3><strong>BSc. (Hons), PhD. (Psychology)</strong></p>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br>
-								<a data-toggle="collapse" data-parent="#accordion2" href="#Nataliech">Read more</a>
+								<a data-toggle="collapse" data-parent="#accordion2" href="#Nataliech">Read more</a></br></br></br></br>
 							</div>
 							<div id="Nataliech" class="accordion-body collapse">
-									<p style="font-size:15px">MORE bio bio bio bio bio bio bio</p></br></br></br></br></br></br>
+									<p style="font-size:15px">
+									<p><h3>A/Prof Natalie Gasson</h3><strong>BSc. (Hons), PhD. (Psychology)</strong></p>
+									MORE bio bio bio bio bio bio bio
+									</p></br></br></br>
 							</div>
 						</div>
 
@@ -165,20 +168,22 @@
 
 							<div class="accordion-heading" id="Romola" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Romola2.jpg" style="height:250px;" /></div>
-									<h3>A/Prof Romola Bucks</br><small>Qualifications &nbsp;&nbsp;&nbsp;</small></h3>
+									<p><h3>A/Prof Romola Bucks</h3><strong>BSc. (Hons), MSc. (Clinical Psychology), PhD. (Cognitive Neuropsychology)</strong></p>
 									<p style="font-size:15px">
 										One of the founding members of the research laboratory, A/Prof Romola Bucks is a highly-regarded clinician
 										and academic in the fields of cognition and neurodegeneration. </br></br>
 										A/Prof Bucks plays a key role in the design and methodology of our primary study (ParkC), and is also
 										currently supervising a number of the postgraduate students here at the lab.</br></br>
-										<a data-toggle="collapse" data-parent="#accordion2" href="#Romolach">Read more</a>
+										A/Prof Bucks current primary research areas are cognitive impairment, neurodegenerative conditions, and cognitive
+										test development.</br></br>
+										<a data-toggle="collapse" data-parent="#accordion2" href="#Romolach" style="float:right">Read more</a>
 									</p>
 								
 							</div>
-							<div id="Romolach" class="accordion-body collapse"></br>
+							<div id="Romolach" class="accordion-body collapse">
 								
 									<p style="font-size:15px">
-									<h3>A/Prof Romola Bucks</br><small>Qualifications</small></h3>
+									<p><h3>A/Prof Romola Bucks</h3><strong>Bsc. (Hons), MSc. (Clinical Psychology), PhD. (Cognitive Neuropsychology)</strong></p>
 									<img src="img/Staff/Rom.jpg" style="height:220px;float:right;padding:5px" />
 									Currently Associate Professor at the School of Psychology, University of Western Australia, 
 									Romola obtained her qualification in Clinical Psychology at the University of Birmingham, 
@@ -209,8 +214,8 @@
 
 							<div class="accordion-heading" id="Meghan" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Meghan.jpg" style="height:250px;" /></div>
-									<h3>Dr Meghan Thomas</br><small>Qualifications</small></h3>
-									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br>
+									<p><h3>Dr Meghan Thomas</h3><strong>BSc., PhD.</strong></p>
+									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br></br>
 								
 							</div>
 							<div id="Meghanch" class="accordion-body collapse">
@@ -222,7 +227,7 @@
 
 							<div class="accordion-heading" id="Bob" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Staff/Bob.jpg" style="padding-right:5px;height:220px;" /></div>
-									<h3>Dr Robert Kane</br><small>Qualifications</small></h3>
+									<p><h3>Dr Robert Kane</h3><strong>BA. (Hons), PhD. (Psychology)</strong></p>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br>
 								<a data-toggle="collapse" data-parent="#accordion2" href="#Bobch">Read more</a>
 							</div>
@@ -237,24 +242,52 @@
 
 					<div class="accordion span10 offset1" id="accordion3">
 						<div class="well accordion-group">
-							<div class="accordion-heading" style="text-align:left" >
+						
+							<div class="accordion-heading" id="Emily" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Emily.jpg" style="height:270px;"/></div>
-									<h3>Emily Corti</br><small>BPsych (Hons)</small></h3>
-									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
-								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Emily" style="font-size:16px;float:right">
-									Show/Hide More
-								</a>
+									<p><h3>Emily Corti</h3><strong>BPsych. (Hons)</strong></p>
+									<p style="font-size:15px">
+										Emily has worked with the lab since 2013, and is currently a full-time research assistant for the 
+										<a href="Projects/Parkc.htm"> ParkC study.</a>
+										Emily is also completing her PhD with the lab, exploring the impacts of non-invasive brain stimulation in 
+										chronic lower back pain.</br></br>
+										Emily's current primary research areas are in chronic pain, traumatic brain injury, and neurodegenerative diseases.</br></br>
+										</br></br></br><a data-toggle="collapse" data-parent="#accordion2" href="#Emilych" style="float:right">Read more</a>
+									</p>
 							</div>
-							<div id="Emily" class="accordion-body collapse">
+							<div id="Emilych" class="accordion-body collapse">
 
-									</br></br><p style="font-size:15px">MORE bio bio bio bio bio bio bio</p></br></br></br></br>
+									<p style="font-size:15px">
+									<p><h3>Emily Corti</h3><strong>BPsych. (Hons)</strong></p>
+										Emily completed her Bachelor of Psychology (Honours) at Curtin University in 2013 as a 
+										part of the Neuroscience Research Laboratory. Emily completed her honours research project 
+										in ParkC under the supervision of Dr Andrea Loftus and Associate Professor Natalie Gasson. 
+										Emily’s research examined the relationship between personality, actual memory and perceived 
+										memory in those affected by Parkinson’s Disease. Emily has continued to work with ParkC since 
+										completing her honours project. Emily is currently employed by ParkC as the ParkC research assistant.</br></br>
+										Emily is continuing her research career as a PhD student in the lab under the supervision of Dr Andrea 
+										Loftus and Associate Professor Natalie Gasson. Emily’s research examines neuronal activity and cognitive 
+										functioning in people with chronic lower back pain. Emily's research also examines if brain stimulation can be 
+										used to help restore normal neuronal activity and reduce the experience of pain in people with chronic lower 
+										back pain.Emily's research uses a range of non-invasive brain-stimulation techniques, including transcranial 
+										direct current stimulation (tDCS) and transcranial magnetic stimulation (TMS), in her research. TMS is a pain-free, 
+										non-invasive technique that is used to measure neuronal excitability (intracortical inhibition and facilitation) 
+										using surface electromygraphic (EMG) measures of muscle activity. tDCS is a non-invasive technique that can be 
+										used to suppress or excite neuronal activity.</br></br>
+										Emily is an undergraduate tutor for the School of Psychology at 
+										Curtin University, tutoring in Brain & Behaviour and Cognition. Emily has also been involved in the training of 
+										two honours students in the implementation of various neuropsychological assessments as a part of ParkC and her 
+										research in chronic pain. Emily has also successfully implemented a training program for the safety protocols 
+										and administration of TMS and tDCS.</br></br>
+										Emily's Honours thesis: <a href="People\Emily\Emily Corti 2013.pdf" target="_blank"> The Impact of Personality on Actual and Self-reported Memory in Parkinson’s Disease.</a>
+									</p>
 							</div>
 						</div>
 
 						<div class="well accordion-group">
 							<div class="accordion-heading" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Blake.jpg" style="width:240px"/></div>
-									<h3>Blake Lawrence</br><small>BPsych (Hons)</small></h3>
+									<p><h3>Blake Lawrence</h3><strong>BPsych. (Hons)</strong></p>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
 								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Blake" style="font-size:16px;float:right">
 									Show/Hide More
@@ -269,7 +302,7 @@
 						<div class="well accordion-group">
 							<div class="accordion-heading" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Leon.jpg" style="height:270px;"/></div>
-									<h3>Leon Booth</br><small>BPsych (Hons)</small></h3>
+									<p><h3>Leon Booth</h3><strong>BPsych. (Hons)</strong></p>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
 								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Leon" style="font-size:16px;float:right">
 									Show/Hide More
@@ -284,7 +317,7 @@
 						<div class="well accordion-group">
 							<div class="accordion-heading" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Maria.jpg" style="width:270px;height:200px;"/></div>
-									<h3>Maria Pushpanathan</br><small>Qualifications</small></h3>
+									<p><h3>Maria Pushpanathan</h3><strong>Qualifications</strong></p>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
 								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Maria" style="font-size:16px;float:right">
 									Show/Hide More
@@ -299,7 +332,7 @@
 						<div class="well accordion-group">
 							<div class="accordion-heading" style="text-align:left" >
 									<div class="span4" style="margin:5px;text-align:center"><img src="img/Postgrads/Andrew.jpg" style="width:270px;height:200px;"/></div>
-									<h3>Andrew Johnson</br><small>BPsych (Hons)</small></h3>
+									<p><h3>Andrew Johnson</h3><strong>BPsych. (Hons)</strong></p>
 									<p style="font-size:15px">bio bio bio bio bio bio bio</p></br></br></br></br></br></br></br></br>
 								<a class="span2" data-toggle="collapse" data-parent="#accordion3" href="#Andrew" style="font-size:16px;float:right">
 									Show/Hide More
