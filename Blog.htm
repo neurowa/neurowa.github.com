@@ -116,17 +116,18 @@
                 <div class="row">
                     <div class="span2 blog-style-2">
                         <h4 class="title-bg">DD/MM/YY</h4>
-                        <ul class="post-data">
-                            <li><i class="icon-user"></i> <a href="#">Admin</a></li>
-                            <li><i class="icon-comment"></i> <a href="#"># Comments</a></li>
-                            <li><i class="icon-tags"></i> <a href="#">tag</a>, <a href="#">tag</a>, <a href="#">tag</a>, <a href="#">tag</a></li>
-                        </ul>
-                        <button class="btn btn-small" type="button"><a href="Blog/Post1.htm">Read more</a></button>
+                        <div class="well">
+                            <img src="img/gallery/gallery-img-2-thumb.jpg" alt="Author">
+							<p><strong>Author's Name</strong></br>Brief desc. of author</p>
+                        </div>
+                        
                     </div>
                     <div class="span6">       
                         <a href="Blog/Post1.htm"><img src="img/gallery/post-img-1.jpg" alt="Post Thumb"></a>
                         <h3 class="title-bg"><a href="Blog/Post1.htm">Blog Post 1</a></h3>
-						<p> Here is where we would put the general description/overview for Blog Post 1. </p>
+						<p> Here is where we would put the general description/overview for Blog Post 1. </br></br>
+						<a href="Blog/Post1.htm"><button style="float:right" class="btn btn-small btn-inverse" type="button">Keep reading...</button></a>
+							</p>
                     </div>    
                 </div>
             </article>
@@ -186,26 +187,9 @@
 
         <!-- Blog Sidebar
         ================================================== --> 
-        <div class="span4 sidebar">
+        <div class="span4">
 
-            <!--Search-->
-            <section>
-                <div class="input-append">
-                    <form action="#">
-                        <input id="appendedInputButton" size="16" type="text" placeholder="Search"><button class="btn" type="button"><i class="icon-search"></i></button>
-                    </form>
-                </div>
-            </section>
-
-            <!--Categories-->
-            <h5 class="title-bg">Categories</h5>
-            <ul class="post-category-list">
-                <li><a href="#"><i class="icon-plus-sign"></i>Placeholder</a></li>
-                <li><a href="#"><i class="icon-plus-sign"></i>Placeholder</a></li>
-                <li><a href="#"><i class="icon-plus-sign"></i>Placeholders</a></li>
-                <li><a href="#"><i class="icon-plus-sign"></i>Placeholder</a></li>
-            </ul>
-
+		
             <!--Popular Posts-->
             <h5 class="title-bg">Popular Posts</h5>
             <ul class="popular-posts">
@@ -224,25 +208,24 @@
                     <em>Posted on DD/MM/YY</em>
                 </li>
             </ul>
-
-            <!--Tabbed Content-->
-            <h5 class="title-bg">More Info</h5>
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#tweets" data-toggle="tab">Tweets</a></li>
-                <li><a href="#about" data-toggle="tab">About</a></li>
+			
+            <h5 class="title-bg">Upcoming Posts</h5>
+            <ul class="popular-posts">
+                <li>
+                    <img src="img/gallery/gallery-img-2-thumb.jpg" alt="Popular Post">
+                    <h6>Upcoming Post 1</h6>
+                    <em>Teaser description of event</em>
+                </li>
+                <li>
+                    <img src="img/gallery/gallery-img-2-thumb.jpg" alt="Popular Post">
+                    <h6>Upcoming Post 2</h6>
+                    <em>Teaser description of event</em>
+                <li>
+                    <img src="img/gallery/gallery-img-2-thumb.jpg" alt="Popular Post">
+                    <h6>Upcoming Post 3</h6>
+                    <em>Teaser description of event</em>
+                </li>
             </ul>
-
-            <div class="tab-content">
-                <div class="tab-pane-active" id="tweets">
-                    <ul>
-                        <li><a href="#"><i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                        <li><a href="#"> <i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                        <li><a href="#"> <i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                        <li><a href="#"> <i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                        <li><a href="#"> <i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                    </ul>
-                </div>
-            </div>
 
             <!--Video Widget-->
             <h5 class="title-bg">Videos</h5>
@@ -257,59 +240,62 @@
 
     <!-- Footer Area
         ================================================== -->
+		<div id="foot" class="footer-container"><!-- Begin Footer -->
+				<div class="container">
+					<div class="row footer-row">
+						<div class="span2 footer-col" style="float:left">
+							<h5>About Us</h5>
+						   <img src="img/ParkC/FooterLogo.png" alt="Logo" /><br /><br />
+							<address>
+								<strong>Synapse Research Laboratory</strong><br />
+								Curtin University, Building 401<br />
+								Perth, WA<br />
+							</address>
+							<ul class="social-icons">
+								<li><a target="_blank" href="https://www.facebook.com/pages/ParkC/150220745018363?fref=ts" class="social-icon facebook"></a></li>
+								<li><a target="_blank" href="https://twitter.com/curtinneuro" class="social-icon twitter"></a></li>
+							</ul>
+						</div>
+						<div class="span3 offset2 footer-col"  >
+							<a class="twitter-timeline" style="text-align:center" width="350" data-dnt="true" href="https://twitter.com/CurtinNeuro" data-widget-id="663527872074616832">Tweets by @CurtinNeuro</a>
+							<script>!function(d,s,id){
+							var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+							if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+							js.src=p+"://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+						<div class="span3 footer-col" style="float:right">
+							<h5>Latest Posts</h5>
+							 <ul class="post-list">
+								<li><a href="#">ParkC Open Day 2015 a Rousing Success</a></li>
+								<li><a href="#">WA-first chronic pain study now recruiting!</a></li>
+								<li><a href="#">Brain training in Parkinson's Disease</a></li>
+								<li><a href="#">Placeholder</a></li>
+								<li><a href="#">Placeholder</a></li>
+							</ul>
+						</div>
+						
+					</div>
 
+					<div class="row"><!-- Begin Sub Footer -->
+						<div class="span12 footer-col footer-sub">
+							<div class="row no-margin">
+								<div class="span6"><span class="left">Synapse Laboratories WA. All rights reserved.</span></div>
+								<div class="span6">
+									<span class="right">
+									<a href="index.htm">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<a href="Projects.htm">Projects</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<a href="Blog.htm">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<a href="Gallery.htm">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<a href="Contact.htm">Contact Us</a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- End Sub Footer -->
 
-	<div id="Footer"></div>	
-	<script>$('#Footer').load('MFooter.htm #foot');</script>
-        	<div class="row footer-row">
-                <div class="span3 footer-col" style="float:left">
-                    <h5>About Us</h5>
-                   <img src="" alt="NeuroWA" /><br /><br />
-                    <address>
-                        <strong>Curtin Neurosciences Laboratory</strong><br />
-                        Curtin University, Building 401<br />
-                        Perth, WA<br />
-                    </address>
-                    <ul class="social-icons">
-                        <li><a target="_blank" href="https://www.facebook.com/pages/ParkC/150220745018363?fref=ts" class="social-icon facebook"></a></li>
-                        <li><a target="_blank" href="https://twitter.com/curtinneuro" class="social-icon twitter"></a></li>
-                    </ul>
-                </div>
-                <div class="span3 footer-col">
-                    <a class="twitter-timeline"
-							data-widget-id="{widget_id}"
-							href="https://twitter.com/curtinneuro"
-							data-screen-name="curtinneuro">
-							Tweets by @CurtinNeuro
-					</a>
-                </div>
-                <div class="span3 footer-col" style="float:right">
-                    <h5>Latest Posts</h5>
-                     <ul class="post-list">
-                        <li><a href="#">ParkC Open Day 2015 a Rousing Success</a></li>
-                        <li><a href="#">WA-first chronic pain study now recruiting!</a></li>
-                        <li><a href="#">Brain training in Parkinson's Disease</a></li>
-                        <li><a href="#">Placeholder</a></li>
-                        <li><a href="#">Placeholder</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-
-            <div class="row"><!-- Begin Sub Footer -->
-                <div class="span12 footer-col footer-sub">
-                    <div class="row no-margin">
-                    	<div class="span6"><span class="left">Copyright 2015 NeuroWA. All rights reserved.</span></div>
-                        <div class="span6">
-                            <span class="right">
-                            <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End Sub Footer -->
-
-        </div>
+				</div>
+		</div>
 
     <!-- Scroll to Top -->  
     <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>

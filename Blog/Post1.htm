@@ -52,7 +52,7 @@
             <!-- Logo
             ================================================== -->
             <div class="span6">
-                <a href="index.htm"><img src="img/ParkC/Logo.png" alt="" /></a>
+                <a href="index.htm"><img src="../img/ParkC/Logo.png" alt="" /></a>
             </div>
             
             <!-- Main Navigation
@@ -109,15 +109,16 @@
      
     <!-- Blog Content
     ================================================== --> 
-    <div class="row"><!--Container row-->
 
+    <div class="row"><!--Container row-->
+		
         <!-- Blog Full Post
         ================================================== --> 
         <div class="span8 blog">
 
             <!-- Blog Post 1 -->
             <article>
-                <h3 class="title-bg"><a href="#">Blog Post 1</a></h3>
+                <h3 class="title-bg"><a href="#">Blog Post 1</a><a style="float:right" href="../Blog.htm"><small> <- Back to the blog</small></a></h3>
                 <div class="post-content">
                     <a href="#"><img src="../img/gallery/post-img-1.jpg" alt="Post Thumb"></a>
 
@@ -145,85 +146,13 @@
                 </div>
             </section>
 
-        <!-- Post Comments
-        ================================================== --> 
-            <section class="comments well">
-			<div id="result"></div>
-			<script>
-				window.onload = function(){
-				var file = "./messages.json";			 
-				  $.getJSON(file, function(json) {
-					// console.log(json);
-					$("#result").html('');
-					for (var i = 0; i < json.length; i++) {
-				 
-					  $("#result").append('<h5>' +json[i].Name  + '</h5>');
-					  $("#result").append('<strong>' + json[i].Message  + '</strong>');
-					  $("#result").append('<hr>');
-					}
-				  });}
-			</script>
-			
-			<div class="comment-form-container">
-                    <h6>Leave a Comment</h6>
-                    <form id="my_form" action="" method="POST">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-user"></i></span>
-                            <input name="Username" class="span4" id="Username" size="16" type="text" placeholder="Name">
-                        </div>
-                        <textarea name="Message" id="Message" class="span6"></textarea>
-                        <div class="row">
-                            <div class="span2">
-									<button name="submit" id="submit" value="submit" />submit</button>
-                            </div>
-                        </div>
-                    </form>
-					
-					    <script>
-							$("#my_form").submit(function(e){  //handle the form submission
-								e.preventDefault();
-								var data = $(this).serialize();
-								$.ajax({
-									url: "./thisfile.php",
-									method: "POST",
-									data: data,
-									success: function(response){
-										 $("#Message").val("");//clear the text box
-										 $("#Username").val("");//clear the text box
-								});
-							});
-						</script>
-                </div>
 
-
-
-			</section><!-- Close comments section-->
-
-        </div><!--Close container row-->
+        </div>
+	
 
         <!-- Blog Sidebar
         ================================================== --> 
-        <div class="span4 sidebar">
-
-            <!--Search-->
-            <section>
-                <div class="input-append">
-                    <form action="#">
-                        <input id="appendedInputButton" size="16" type="text" placeholder="Search"><button class="btn" type="button"><i class="icon-search"></i></button>
-                    </form>
-                </div>
-            </section>
-
-            <!--Categories-->
-            <h5 class="title-bg">Categories</h5>
-            <ul class="post-category-list">
-                <li><a href="#"><i class="icon-plus-sign"></i>Placeholder</a></li>
-                <li><a href="#"><i class="icon-plus-sign"></i>Placeholder</a></li>
-                <li><a href="#"><i class="icon-plus-sign"></i>Placeholders</a></li>
-                <li><a href="#"><i class="icon-plus-sign"></i>Placeholder</a></li>
-            </ul>
-
-            <!--Popular Posts-->
+        <div class="span4" >
             <h5 class="title-bg">Popular Posts</h5>
             <ul class="popular-posts">
                 <li>
@@ -242,31 +171,12 @@
                 </li>
             </ul>
 
-            <!--Tabbed Content-->
-            <h5 class="title-bg">More Info</h5>
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#tweets" data-toggle="tab">Tweets</a></li>
-                <li><a href="#about" data-toggle="tab">About</a></li>
-            </ul>
-
-            <div class="tab-content">
-                <div class="tab-pane-active" id="tweets">
-                    <ul>
-                        <li><a href="#"><i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                        <li><a href="#"> <i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                        <li><a href="#"> <i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                        <li><a href="#"> <i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                        <li><a href="#"> <i class="icon-share-alt"></i>@ParkC</a> Placeholder</li>
-                    </ul>
-                </div>
-            </div>
-
             <!--Video Widget-->
             <h5 class="title-bg">Videos</h5>
             <iframe src="https://www.youtube.com/v/0eal0KwHPdo" frameborder="1" height="260" width="360" allowfullscreen></iframe>
         </div>
 
-    </div>
+		</div>
     
     </div> <!-- End Container -->
 
