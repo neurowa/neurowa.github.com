@@ -186,16 +186,9 @@
 $('#Footer').load('../MFooter.htm');</script>
 
 <script>
-var as = ('#Footer').getElementsByTagName("a");
-var imgs = ('#Footer').getElementsById("logo");
+$('#Footer a').attr("href",['../'+('#Footer a')]);
 
-for (var i = 0; i < as.length; i++) {
-    as[i].href = "../" + as[i].href
-}
 
-for (var j = 0; j < imgs.length; j++) {
-    imgs[j].src = "../" + imgs[j].src
-}
 </script>
 
 
