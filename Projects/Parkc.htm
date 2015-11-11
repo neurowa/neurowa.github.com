@@ -179,16 +179,18 @@
     <!-- Footer Area
         ================================================== -->
 
-<div id="Footer"></div>	
-<script>$('#Footer').load('../PFooter.htm #foot');</script>
+<div id="Footer">
+</div>	
 
 <script>
-var anchors = document.getElementsByTagName("a");
+$('#Footer').load('../PFooter.htm #foot');
+var anchors = $('#Footer').getElementsByTagName("a");
 
 for (var i = 0; i < anchors.length; i++) {
     anchors[i].href = "../" + anchors[i].href
 }
 </script>
+
 
     <!-- Scroll to Top -->  
     <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
