@@ -180,7 +180,15 @@
         ================================================== -->
 
 <div id="Footer"></div>	
-<script>$('#Footer').load('../PFooter.htm #foot');</script>	
+<script>$('#Footer').load('../PFooter.htm #foot');</script>
+
+<script>
+var anchors = document.getElementsByTagName("a");
+
+for (var i = 0; i < anchors.length; i++) {
+    anchors[i].href = "../" + anchors[i].href
+}
+</script>
 
     <!-- Scroll to Top -->  
     <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
