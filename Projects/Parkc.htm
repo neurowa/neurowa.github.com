@@ -185,7 +185,7 @@
 <script>
 $('#Footer').load('../MFooter.htm');
 var as = $('#Footer').getElementsByTagName("a");
-var imgs = $('#Footer').getElementsByTagName("img");
+var imgs = $('#Footer').getElementsById("logo");
 
 for (var i = 0; i < as.length; i++) {
     as[i].href = "../" + as[i].href
