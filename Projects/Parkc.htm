@@ -186,8 +186,9 @@
 $('#Footer').load('../MFooter.htm');</script>
 
 <script>
-$('#Footer a').attr("href",'../'+[('#Footer a').attr("href")]);
-
+$('#Footer a').attr("href", function(i, href) {
+  return '../' + href;
+});
 
 </script>
 
