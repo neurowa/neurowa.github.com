@@ -184,10 +184,15 @@
 
 <script>
 $('#Footer').load('../MFooter.htm');
-var anchors = $('#Footer').getElementsByTagName("a");
+var as = $('#Footer').getElementsByTagName("a");
+var imgs = $('#Footer').getElementsByTagName("img");
 
-for (var i = 0; i < anchors.length; i++) {
-    anchors[i].href = "../" + anchors[i].href
+for (var i = 0; i < as.length; i++) {
+    as[i].href = "../" + as[i].href
+}
+
+for (var j = 0; j < imgs.length; j++) {
+    imgs[j].href = "../" + imgs[j].href
 }
 </script>
 
