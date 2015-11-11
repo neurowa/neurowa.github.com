@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<base href="../">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Synapse</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS
 ================================================== -->
-<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='../css/font.css' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../css/bootstrap.css">
 <link rel="stylesheet" href="../css/bootstrap-responsive.css">
 <link rel="stylesheet" href="../css/prettyPhoto.css" />
@@ -28,7 +29,7 @@
 
 <!-- JS
 ================================================== -->
-<script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="../jquery-1.8.3.min.js"></script>
 <script src="../js/bootstrap.js"></script>
 <script src="../js/jquery.prettyPhoto.js"></script>
 <script src="../js/jquery.flexslider.js"></script>
@@ -54,63 +55,10 @@
     
     <div class="container">
     
-      <div class="row header"><!-- Begin Header -->
-      
-        <!-- Logo
-        ================================================== -->
-        <div class="span6">
-                <a href="index.htm"><img src="../img/ParkC/Logo.png" alt="" /></a>
-         </div>
-        
-        <!-- Main Navigation
-            ================================================== -->
-           <div class="span5 navigation" style="float:right" style="padding-top:5px">
-			<div class="navbar hidden-phone">
-            
-            	<ul class="nav">
-                   <li><a href="../index.htm">Home</a></li>
-					<li class="dropdown active">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="Parkc.htm">ParkC</a></li>
-                            <li><a href="Pain.htm">Chronic Pain</a></li>
-							<li><a href="PDMCI.htm">PD MCI</a></li>
-							<li><a href="PDImpulsivity.htm">Impulsivity in PD</a></li>
-							<li><a href="PDSleep.htm">PD Sleep</a></li>
-							<li><a href="../Projects.htm">All</a></li>
-                        </ul>
-                     </li>
-                   <li><a href="../Researchers.htm">Researchers</a></li>
-
-                     <li><a href="../Blog">Blog</a></li> 
-                     
-                     <li><a href="../Gallery.htm">Gallery</a></li>
-                     
-                     
-                     <li><a href="../Contact.htm">Contact</a></li>
-         
-           		</ul>
-            </div>
-        
-                    <!-- Mobile Nav
-                    ================================================== -->
-                    <form action="#" id="mobile-nav" class="visible-phone">
-                        <div class="mobile-nav-select">
-                            <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                                <option value="">Navigate...</option>
-                                <option value="../index.htm">Home</option>
-                                <option value="../Projects.htm">Projects</option>
-                                <option value="../Researchers.htm">Researchers</option>
-                                <option value="../Blog">Blog</option>
-                                <option value="../Gallery.htm">Gallery</option>
-                                <option value="../Contact.htm">Contact</option>
-                            </select>
-                        </div>
-                        </form>
-                
-            </div>
-        
-      </div><!-- End Header -->
+<!-- Begin Header -->
+<div id="Header"></div>	
+<script>$('#Header').load('../MHeader.htm')</script>
+<!-- End Header -->
      
     <!-- Page Content
     ================================================== --> 
@@ -180,7 +128,7 @@
         ================================================== -->
 
 <div id="Footer"></div>	
-<script>$('#Footer').load('../PFooter.htm #foot');</script>	
+<script>$('#Footer').load('../MFooter.htm')</script>
 		
     <!-- Scroll to Top -->  
     <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
