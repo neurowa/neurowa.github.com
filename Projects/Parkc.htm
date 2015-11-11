@@ -183,7 +183,11 @@
 </div>	
 
 <script>
-$('#Footer').load('../MFooter.htm');</script>
+$('#Footer').load('../MFooter.htm', function(){
+$('this a').each(function(){
+     this.href = '../' + this.href;
+})
+});</script>
 
 <script>
 $('#Footer a').each(function(){
