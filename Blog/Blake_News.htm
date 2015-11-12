@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<base href="../">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Synapse</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,65 +46,10 @@
     
     <div class="container main-container">
     
-      <div class="row header"><!-- Begin Header -->
-          
-            <!-- Logo
-            ================================================== -->
-            <div class="span6">
-                <a href="index.htm"><img src="../img/ParkC/Logo.png" alt="" /></a>
-            </div>
-            
-            <!-- Main Navigation
-            ================================================== -->
-            <div class="span5 navigation" style="float:right" style="padding-top:5px">
-                    <div class="navbar hidden-phone">
-            
-            	<ul class="nav">
-                   <li><a href="../index.htm">Home</a></li>
-					<li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../Projects/Parkc.htm">ParkC</a></li>
-                            <li><a href="../Projects/Pain.htm">Chronic Pain</a></li>
-							<li><a href="../Projects/PDMCI.htm">PD MCI</a></li>
-							<li><a href="../Projects/PDImpulsivity.htm">Impulsivity in PD</a></li>
-							<li><a href="../Projects/PDSleep.htm">PD Sleep</a></li>
-							<li><a href="../Projects.htm">All</a></li>
-                        </ul>
-                     </li>
-                   <li><a href="../Researchers.htm">Researchers</a></li>
-
-                     <li class="active"><a href="../Blog.htm">Blog</a></li>
-                     
-                     <li><a href="../Gallery.htm">Gallery</a></li>
-                     
-                     
-                      <li><a href="../Contact.htm">Contact Us</a></li>
-         
-           		</ul>
-            </div>
-        
-                    <!-- Mobile Nav
-                    ================================================== -->
-                    <form action="#" id="mobile-nav" class="visible-phone">
-                        <div class="mobile-nav-select">
-                            <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                                <option value="">Navigate..</option>
-                                <option value="../index.htm">Home</option>
-                                <option value="../Projects.htm">Projects</option>
-                                <option value="../Researchers.htm">Researchers</option>
-                                <option value="../Blog.htm">Blog</option>
-                                <option value="../Gallery.htm">Gallery</option>
-                                <option value="../Contact.htm">Contact Us</option>
-                            </select>
-                        </div>
-                        </form>
-                
-            </div>
-            
-            
-            
-            </div><!-- End Header -->
+<!-- Begin Header -->
+<div id="Header"></div>	
+<script>$('#Header').load('../MHeader.htm');</script>
+<!-- End Header -->
      
     <!-- Blog Content
     ================================================== --> 
@@ -194,62 +140,10 @@
     
     </div> <!-- End Container -->
 
-    <!-- Footer Area
-        ================================================== -->
-	<div class="footer-container">	
-		<div class="container">
-        	<div class="row footer-row">
-                <div class="span2 footer-col" style="float:left">
-                    <h5>About Us</h5>
-                   <img src="../img/ParkC/FooterLogo.png" alt="Logo" /><br /><br />
-                    <address>
-                        <strong>Synapse Research Laboratory</strong><br />
-                        Curtin University, Building 401<br />
-                        Perth, WA<br />
-                    </address>
-                    <ul class="social-icons">
-                        <li><a target="_blank" href="https://www.facebook.com/pages/ParkC/150220745018363?fref=ts" class="social-icon facebook"></a></li>
-                        <li><a target="_blank" href="https://twitter.com/curtinneuro" class="social-icon twitter"></a></li>
-                    </ul>
-                </div>
-                <div class="span3 offset2 footer-col"  >
-					<a class="twitter-timeline" style="text-align:center" width="350" data-dnt="true" href="https://twitter.com/CurtinNeuro" data-widget-id="663527872074616832">Tweets by @CurtinNeuro</a>
-					<script>!function(d,s,id){
-					var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-					if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-					js.src=p+"://platform.twitter.com/widgets.js";
-					fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div>
-                <div class="span3 footer-col" style="float:right">
-                    <h5>Latest Posts</h5>
-                     <ul class="post-list">
-                        <li><a href="Pain_Study.htm">Pain Study Wraps Up Data Collection</a></li>
-                        <li><a href="Rew_Brain.htm">In the News: Rewiring the Brain</a></li>
-                        <li><a href="Blake_News.htm">Cognition Study Featured on WA News!</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-
-            <div class="row"><!-- Begin Sub Footer -->
-                <div class="span12 footer-col footer-sub">
-                    <div class="row no-margin">
-                    	<div class="span6"><span class="left">Synapse Laboratories WA. All rights reserved.</span></div>
-                        <div class="span6">
-                            <span class="right">
-                            <a href="../index.htm">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-							<a href="../Projects.htm">Projects</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-							<a href="../Blog.htm">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-							<a href="../Gallery.htm">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-							<a href="../Contact.htm">Contact Us</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End Sub Footer -->
-
-        </div>
-	</div><!-- End Footer --> 
+<!-- Footer Area-->
+<div id="Footer"></div>	
+<script>$('#Footer').load('../MFooter.htm');</script>	
+<!-- End Footer --> 
 
     <!-- Scroll to Top -->  
     <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
