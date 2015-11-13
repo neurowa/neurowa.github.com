@@ -75,6 +75,12 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+img-responsive {
+  display: block;
+  max-width: 100%; 
+  height: auto; 
+}
+
 #map_canvas img {
   max-width: none;
 }
