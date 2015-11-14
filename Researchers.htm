@@ -34,28 +34,28 @@
 <script src="js/jquery.quicksand.js"></script>
 <script src="js/jquery.custom.js"></script>
 
+<script>
+	window.onload = function(){  
 
+	var url = document.location.toString();
+	if (url.match('#')) {
+		$('.nav-tabs a[href=#' + url.split('#')[1] + ']').tab('show');
+		window.location.href = "#" +url.split('#')[2];
+
+	}
+
+	//Change hash for page-reload
+	$('.nav-tabs a[href=#' + url.split('#')[1] + ']').on('shown', function (e) {
+		window.location.hash = e.target.hash;
+	}); 
+	} 
+</script>
 
 </head>
 
 <body>
 
-	<script>
-	window.onload = function(){  
 
-    var url = document.location.toString();
-    if (url.match('#')) {
-        $('.nav-tabs a[href=#' + url.split('#')[1] + ']').tab('show');
-		window.location.href = "#" +url.split('#')[2];
-
-    }
-
-    //Change hash for page-reload
-    $('.nav-tabs a[href=#' + url.split('#')[1] + ']').on('shown', function (e) {
-        window.location.hash = e.target.hash;
-    }); 
-	} 
-	</script>
 
 
 	
@@ -96,7 +96,7 @@
 											</ul>
 										</div>
 									<h3>Dr Andrea Loftus</h3><strong>Qualifications</strong><p style="font-size:15px"></br>
-									A founding member and the director of the lab, Dr Andrea Loftus is a high profile academic in her field.
+									Current director of the lab, Dr Andrea Loftus is a high profile academic in her field.
 									Dr Loftus is frequently interviewed by the media about developments in neuroscience, and for her
 									expertise in neurological change.</br></br>
 									Dr Loftus co-ordinates the day-to-day operations of the lab as well as its future, hoping to develop even stronger
@@ -189,8 +189,7 @@
 										</div>
 									<p><h3>A/Prof Romola Bucks</h3><strong>BSc. (Hons), MSc. (Clinical Psychology), PhD. (Cognitive Neuropsychology)</strong></p>
 									<p style="font-size:15px">
-										One of the founding members of the research laboratory, A/Prof Romola Bucks is a highly-regarded clinician
-										and academic in the fields of cognition and neurodegeneration. </br></br>
+										A/Prof Romola Bucks is a highly-regarded clinician and academic in the fields of cognition and neurodegeneration. </br></br>
 										A/Prof Bucks plays a key role in the design and methodology of our primary study (ParkC), and is also
 										currently supervising a number of the postgraduate students here at the lab.</br></br>
 										A/Prof Bucks' current primary research areas are in cognitive impairment, neurodegenerative conditions, and cognitive
@@ -251,9 +250,9 @@
 										</div>
 									<p><h3>Dr Meghan Thomas</h3><strong>BSc. (Hons), PhD.</strong></p>
 									<p style="font-size:15px">
-									Dr Meghan Thomas founded the Parkinson's Centre in 2008 with support from Edith Cowan University and an 
+									Dr Meghan Thomas founded this research centre in 2008 with support from Edith Cowan University and an 
 									Australian Research Council Discovery Grant. Although Dr Thomas now works with the Health Department of WA, 
-									she remains an active member of ParkC.</br></br>
+									she remains an active member.</br></br>
 									Dr Thomas is a developmental neurobiologist who received her PhD from the School of Animal Biology, University 
 									of Western Australia. Her research interests include the role of transcription factors, such as the Pax genes, 
 									in development and cell replacement therapies for Parkinson's </br></br>
@@ -427,6 +426,7 @@
 							Blake has also been a Unit Coordinator and Lecturer for Advanced Quantitative Research Methods in the School of Psychology at Murdoch 
 							University and is currently an undergraduate tutor for Perception and Individual Differences in the School of Psychology at Curtin 
 							University. Blake also has experience training PhD students in standardised neuropsychological assessment of people with Parkinson’s. </br></br>
+							Blake's Honours thesis is available here: <a href="People\Blake\Blake Lawrence 2013.pdf" target="_blank">Activities of Daily Living, Depression, and Quality of Life in Parkinson’s Disease</a>
 							<h5>Publications:</h5>
 								<div style="line-height: 2; padding-left: 2em; text-indent:-2em;" class="csl-bib-body">
 								<div class="csl-entry"><b>Lawrence, B. J.</b>, Gasson, N., Kane, R., Bucks, R. S., &amp; Loftus, A. M. (2014). Activities of Daily Living, Depression, and Quality of Life in Parkinson’s Disease. <i>PLoS ONE</i>, <i>9</i>(7). http://doi.org/10.1371/journal.pone.0102294</div>
@@ -636,6 +636,8 @@
 						</div>
 					</div>
 				</div>
+		
+		
 		</div>
 			
 	</div>
