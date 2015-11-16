@@ -51,11 +51,6 @@
 <div id="Header"></div>	
 <script>$('#Header').load('MHeader.htm');</script> 
 <!-- End Header -->
-<script>
-$(function() {
-    $('#Footer').load('MFooter.htm');
-});
-</script>
      
     <!-- Page Content
     ================================================== --> 
@@ -135,7 +130,15 @@ $(function() {
 		</ul>
 
 								<!-- Root element of PhotoSwipe. Must have class pswp. -->
-								<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+								
+
+
+		</div>
+    
+		</div>
+	
+	
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
 									<!-- Background of PhotoSwipe. 
 										 It's a separate element, as animating opacity is faster than rgba(). -->
@@ -202,17 +205,11 @@ $(function() {
 <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
 <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js'></script>
 <script src="js/index.js"></script>
-
-
-		</div>
-    
-		</div>
 	
 	</div>
 
     <!-- Footer Area
         ================================================== -->
-	<div id="Footer"></div>	
 
 
     <!-- Scroll to Top -->  
@@ -220,9 +217,10 @@ $(function() {
 	
 
 
+</div>
 
-
-
+<div id="Footer"></div>	
+<script>$('#Footer').load('MFooter.htm');</script>
 
 </body>
 </html>
