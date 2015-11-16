@@ -8,7 +8,7 @@
 .my-gallery img {
   width: auto\9;
   height: auto;
-  max-width: 100%;
+    max-width: 100%;
 }
 .my-gallery figure {
   display: block;
