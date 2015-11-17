@@ -1,9 +1,10 @@
 .my-gallery { 
-	width:350px;
+	width:280px;
   vertical-align:middle;
   border: 0;
 	object-fit:contain;
 	  display: block;
+
 }
 
 .my-gallery a {
