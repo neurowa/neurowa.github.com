@@ -1,21 +1,19 @@
-.my-gallery {
-  width: auto\9;
-  height: auto;
-  max-width: 100%;
+.my-gallery { 
+	width:230px;
+  vertical-align:middle;
   border: 0;
-  float: left;
+	object-fit:contain;
+	  display: block;
 }
-.my-gallery img {
-  width: auto\9;
-  height: auto;
-    max-width: 100%;
+
+.my-gallery a {
+vertical-align:middle;
 }
 .my-gallery figure {
   display: block;
-  float: left;
   margin: 0 5px 5px 0;
-  width: auto\9;
-  height: auto;
+  vertical-align:middle;
+
 }
 .my-gallery figcaption {
   display: none;
