@@ -30,6 +30,11 @@
 						<li><a href="Contact.htm">Contact Us</a></li>
 					</ul>
 					
+					<script>
+					var path = window.location.pathname.substring(1);
+					$('.nav>li>a[href="' + path + '"]').parent().addClass('active');
+					</script>
+					
 				</div>
                     <!-- Mobile Nav
                     ================================================== -->
@@ -49,10 +54,6 @@
                 
             </div>
             
-         			<script>
-					var pathArray = window.location.pathname.split( '/' );
-					var path = pathArray[1];
-					$('.nav>li>a[href="' + path + '"]').parent().addClass('active');
-					</script>   
+            
             
 	</div>
