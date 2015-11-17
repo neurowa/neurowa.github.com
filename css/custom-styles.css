@@ -184,6 +184,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 .gallery-title { margin-bottom:15px; }
 .gallery-item img {
 object-fit:contain;
+height:200px;
 	}
 
 .gallery-hover-6col,
