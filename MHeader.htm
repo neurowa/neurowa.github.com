@@ -34,7 +34,7 @@
 					var path = window.location.pathname.substring(1);
 					var parts = path.split(/\//);
 					var result = parts[0];
-					$('.nav>li>a[href="' + result + '"]').parent().addClass('active');
+					$('.nav>li>a[href="' + result.split('.')[0] + '"]').parent().addClass('active');
 					</script>
 					
 				</div>
