@@ -1,5 +1,5 @@
 .my-gallery { 
-	width:280px;
+	max-width:280px;
   vertical-align:middle;
   border: 0;
 	object-fit:contain;
