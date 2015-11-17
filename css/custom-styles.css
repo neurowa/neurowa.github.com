@@ -180,7 +180,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 / Gallery
 **************************************/
 .gallery{
-
+z-index:10;
 }
 
 .gallery-title { margin-bottom:15px; }
