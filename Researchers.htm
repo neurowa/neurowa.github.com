@@ -35,12 +35,22 @@
 <script src="js/jquery.custom.js"></script>
 
 <script>
+$.fn.scrollView = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top
+        }, 1000);
+    });
+}
+</script>
+
+<script>
 	window.onload = function(){  
 
 	var url = document.location.toString();
 	if (url.match('#')) {
 		$('.nav-tabs a[href=#' + url.split('#')[1] + ']').tab('show');
-		window.location.href = "#" +url.split('#')[2];
+		$('#' + url.split('#')[2]).scrollView();
 
 	}
 
@@ -50,6 +60,8 @@
 	}); 
 	} 
 </script>
+
+
 
 </head>
 
