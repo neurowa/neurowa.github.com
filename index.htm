@@ -63,7 +63,14 @@ $(document).ready(function () {
     });  
 });
 
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 2500
+    })
+  });
+
 </script>
+
 
 </head>
 
@@ -113,10 +120,10 @@ $(document).ready(function () {
                 <button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
             </h5>
 
-        <div id="blogCarousel" class="carousel slide ">
+        <div id="blogCarousel" class="carousel slide auto" data-ride="carousel" >
 
             <!-- Carousel items -->
-            <div class="carousel-inner">
+            <div class="carousel-inner" role="listbox">
 
                  <!-- Blog Item 1 -->
                 <div class="active item">
@@ -178,7 +185,7 @@ $(document).ready(function () {
             </h5>
 
             <!-- Client Testimonial Slider-->
-            <div id="clientCarousel" class="carousel no-margin">
+            <div id="clientCarousel" class="carousel no-margin auto" data-ride="carousel">
             <!-- Carousel items -->
             <div class="carousel-inner">
 
