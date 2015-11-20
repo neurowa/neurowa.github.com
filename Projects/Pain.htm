@@ -34,6 +34,7 @@
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.custom.js"></script>
+<script src="js/progressbar.min.js"></script>
 </head>
 
 <body class="home">
@@ -75,8 +76,30 @@
 
                     <p>Description of Emily's aims, project, methodology, progress, time running, and things learned etc., etc.
 					</br></br></br></br></p>
+					<div class="span2 percentcontainer" id="example-percent-container"></div>
+					<div class="span2" style="font-size:15px"><ul><li style="text-decoration:line-through">Participant testing</li>
+						<li style="text-decoration:line-through">Data Entry</li>
+						<li style="text-decoration:line-through">Data Cleaning</li>
+						<li>Analysis</li>
+						<li>Write-up</li>
+						<li>Publication</li>
+					</ul></div>
+					
+						<script>
+						var circle = new ProgressBar.Circle('#example-percent-container', {
+							color: '#FCB03C',
+							strokeWidth: 5,
+							trailWidth: 3,
+							duration: 2500,
+							text: {
+								value: '75'
+							},
+							step: function(state, bar) {
+								bar.setText((bar.value() * 100).toFixed(0)+'%');
+							}
+						});
 
-
+						circle.animate(0.75)</script>
 
 				</div>
 
