@@ -34,6 +34,7 @@
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.custom.js"></script>
+<script src="js/progressbar.min.js"></script>
 </head>
 
 <body class="home">
@@ -69,15 +70,67 @@
 					<iframe height="350px" width="470px" style="max-width:100%" src="https://www.youtube.com/embed/qTyMd0sXvL4" frameborder="0" allowfullscreen></iframe>
 			</div>
 
-                <div class="span6" style="margin-left:0px">
-                    <h3 class="title-bg" style="margin:0px;line-height:18px;text-align:center">The Project</h3></br>
+			<div class="span6" style="margin-left:0px">
+				<h3 class="title-bg" style="margin:0px;line-height:18px;text-align:center">The Project</h3>
 
-                    <p>Description of Blake's aims, project, methodology, progress, time running, and things learned etc., etc.
-					</br></br></br></br></br></br></br></br></br></br></p>
+				<p class="lead" style="margin-bottom:20px">Background:</p>
+				<p style="font-size:13px">
+					Despite Parkinson's being traditionally viewed as a motor disorder, individuals often present with mild cognitive impairments.
+					Few studies have explored ways of improving cognition in Parkinson's without medication, and fewer still have done
+					so with sound research methods. This something that PhD candidate Blake Lawrence intends to address.
+				</p>
+				<p class="lead" style="margin-bottom:20px">Methods:</p>
+				<p style="font-size:13px">
+					Participants receive a comprehensive cognitive evaluation aimed at identifying common issues with thinking and memory abilities.
+					Individuals then complete an intervention comprised of non-invasive brain stimulation, cognitive training, or both. Individuals are
+					evaluated after completing the intervention, and again after three months. This will show:</p>
+					<ul style="margin-bottom:10px;font-size:13px">
+						<li>Whether the interventions improved cognitive abilities</li>
+						<li>Which of the interventions was the most effective</li>
+						<li>Whether improvements remained after an extended period without the intervention</li>
+						<li>Which of the interventions' improvements lasted the longest</li>
+					</ul>
+				<p class="lead" style="margin-bottom:20px">Progress:</p>
+				<p style="font-size:13px">
+					After many busy months, Blake has now completed the recruitment and testing of all of his participants. Blake will now begin 
+					the entry and checking of all of his data, before he begins his analysis.
+				</p>
+
+					<div class="span2 percentcontainer" id="example-percent-container"></div>
+					<div class="span3" style="font-size:15px"><ul>
+						<li style="text-decoration:line-through">Participant Recruitment</li>
+						<li style="text-decoration:line-through">Participant Testing</li>
+						<li>Data Entry</li>
+						<li>Data Cleaning</li>
+						<li>Analysis</li>
+						<li>Write-up</li>
+						<li>Publication</li>
+					</ul></div></br></br>
+					
+					<script>
+						var circle = new ProgressBar.Circle('#example-percent-container', {
+							color: '#0000ff',
+							strokeWidth: 5,
+							trailWidth: 3,
+							duration: 2500,
+							text: {
+								value: '30'
+							},
+							step: function(state, bar) {
+								bar.setText((bar.value() * 100).toFixed(0)+'%');
+							}
+						});
+
+						circle.animate(0.30)
+					</script>
+				
+				<div class="span6" style="font-size:13px;margin-left:0px"></br></br>
+				If you're interested in participating or just want to find out a little more, you can contact Blake Lawrence
+				at: <a href="mailto:Blake.Lawrence@synapselab.org" style="color:blue">Blake.Lawrenc@synapselab.org</a></div>
+			
 
 
-
-                </div>
+			</div>
 
             </div>
 
