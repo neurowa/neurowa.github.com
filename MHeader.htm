@@ -31,18 +31,10 @@
 					</ul>
 					
 					<script>
-					$(function() {
 					var path = window.location.pathname.substring(1);
-					if (path.length = 0 ) {
-										('.nav>li>a[href="index.htm"]').parent().addClass('active');
-									} else{
-										var parts = path.split(/\//);
-										var result = parts[0];
-										('.nav>li>a[href="' + result.split('.')[0] + '.htm' + '"]').parent().addClass('active');
-									}
-									});
-
-
+					var parts = path.split(/\//);
+					var result = parts[0];
+					$('.nav>li>a[href="' + result.split('.')[0] + '.htm' + '"]').parent().addClass('active');
 					</script>
 					
 				</div>
