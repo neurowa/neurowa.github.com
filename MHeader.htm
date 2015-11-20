@@ -34,7 +34,7 @@
 					var path = window.location.pathname.substring(1);
 					var parts = path.split(/\//);
 					var result = parts[0];
-					if (result.length = 0) {
+					if (result.length = "0") {
 					$('.nav>li>a[href="index.htm"]').parent().addClass('active');
 					}else{
 					$('.nav>li>a[href="' + result.split('.')[0] + '.htm' + '"]').parent().addClass('active');
