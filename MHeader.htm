@@ -31,7 +31,7 @@
 					</ul>
 					
 					<script>
-					window.onload = function {
+					$(function() {
 					var path = window.location.pathname.substring(1);
 					var parts = path.split(/\//);
 					var result = parts[0];
@@ -40,7 +40,7 @@
 									} else{
 										$('.nav>li>a[href="' + result.split('.')[0] + '.htm' + '"]').parent().addClass('active');
 									}
-									}
+									});
 					</script>
 					
 				</div>
