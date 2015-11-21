@@ -59,14 +59,9 @@
 					<div class="span4 gallery-item my-gallery" id="Gallery1">
 					</div>
 					<script>
-					var c = document.getElementById("Gallery1");
-					var ctx = c.getContext("2d");
-					var img = new Image();
-					img.onload = function() {
-						ctx.drawImage(img, 0, 0);
-					};
-					img.src = 'Gallery\OpenDay20121.jpg';
-					
+					var img1 = new Image();
+					img1.src = 'Gallery/OpenDay2012/1.jpg'
+					$("#Gallery1").append( "<img src='"+ img1.src +"'>" );		
 					</script>
 				</li>
 			
