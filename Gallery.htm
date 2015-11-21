@@ -59,12 +59,16 @@
 					<div class="span4 gallery-item my-gallery" id="Gallery1">
 					</div>
 					<script>
-					for (i = 0; i = 19; i++) { 
+					var num = 1;                                     
+					var len = 19; 
+					
+				(window.onload=function() { 
 					var img = new Image();
-					img.src = 'Gallery/OpenDay2012/' + [i] + '.jpg';
-					$("#Gallery1").append( "<img src='"+ img.src +"'>" );
-					img = 0;
-					}					
+					img.src = 'Gallery/OpenDay2012/' + num + '.jpg';
+					num = (num === len) ? 0 : ++num;  
+					});	
+
+				
 					</script>
 				</li>
 			
