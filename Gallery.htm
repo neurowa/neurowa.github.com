@@ -56,21 +56,17 @@
         <div class="gallery span12" style="margin-left:0px">
 			<ul class="unstyled">
 				<li>	
-					<div class="span4 gallery-item my-gallery" id="Gallery1" style="margin-left:0px" itemscope itemtype="http://schema.org/ImageGallery">
+					<div class="span4 gallery-item my-gallery" id="Gallery1">
 					</div>
 					<script>
-						var folder = "Gallery/OpenDay2012";
-
-						$.ajax({
-							url : folder,
-							success: function (data) {
-								$(data).find("a").attr("href", function (i, val) {
-									if( val.match(/\.jpg|\.png|\.gif/) ) { 
-										$("#Gallery1").append( "<img src='"+ folder + val +"'>" );
-									} 
-								});
-							}
-						});
+					var c = document.getElementById("Gallery1");
+					var ctx = c.getContext("2d");
+					var img = new Image();
+					img.onload = function() {
+						ctx.drawImage(img, 0, 0);
+					};
+					img.src = 'Gallery\OpenDay20121.jpg';
+					
 					</script>
 				</li>
 			
