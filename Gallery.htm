@@ -61,8 +61,9 @@
 					<script>
 					for (i = 0; i = 19; i++) { 
 					var img = new Image();
-					img.src = 'Gallery/OpenDay2012/[i].jpg';
+					img.src = 'Gallery/OpenDay2012/' + [i] + '.jpg';
 					$("#Gallery1").append( "<img src='"+ img.src +"'>" );
+					img = 0;
 					}					
 					</script>
 				</li>
