@@ -54,12 +54,24 @@
         <!-- Gallery Items
         ================================================== --> 
         <div class="gallery span12" style="margin-left:0px">
-
 			<ul class="unstyled">
 				<li>	
 					<div class="span4 gallery-item my-gallery" id="Gallery1" style="margin-left:0px" itemscope itemtype="http://schema.org/ImageGallery">
 					</div>
-					<script>$('#Gallery1').load('Gallery/Gallery1.htm');</script> 
+					<script>
+						var folder = "Gallery/OpenDay2012";
+
+						$.ajax({
+							url : folder,
+							success: function (data) {
+								$(data).find("a").attr("href", function (i, val) {
+									if( val.match(/\.jpg|\.png|\.gif/) ) { 
+										$("#Gallery1").append( "<img src='"+ folder + val +"'>" );
+									} 
+								});
+							}
+						});
+					</script>
 				</li>
 			
 				<li>
