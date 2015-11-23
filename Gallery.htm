@@ -57,29 +57,22 @@
 			<ul class="unstyled">
 				<li>	
 					<div class="span4 gallery-item my-gallery" style="margin-left:0px" itemscope itemtype="http://schema.org/ImageGallery" id="Gallery1">
-						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-							<a href="Gallery/OpenDay2012/1.jpg" itemprop="contentUrl" data-size="960x640">
-								<img src="Gallery/OpenDay2012/1.jpg" itemprop="thumbnail" alt="Image description" />
-							</a>
-							<figcaption itemprop="caption description">Image caption  1</figcaption>
-							<span class="project-details" style="text-align:center">
-								<strong>ParkC Open Day 2012</strong>
-								<p style="line-height:0px;margin-top:15px;margin-bottom:5px"></br>
-								<a href="gallery-single.htm" style="display:none;float:right"><small>See all...</small></a></p> 
-							</span>
-						</figure>
 					</div>
 <script>
 					var num = 2;
 					var arr = [];
 					var art = [];
 					var idiv = document.getElementById("Gallery1").innerHTML;
+					
 function loader(img) {
-		
         var imgH = this.naturalHeight;
         var imgW = this.naturalWidth;
         var imgsrc = this.src;
+		if (imgsrc.indexOf("1.jpg") != -1 ){
+		idiv += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + imgsrc+ '" itemprop="contentUrl" data-size="'+imgW+'x'+imgH+'"><img src="'+imgsrc+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2012</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">Thanking our participants</br></p> </span></figure>';		
+		} else {
 		idiv += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + imgsrc+ '" itemprop="contentUrl" data-size="'+imgW+'x'+imgH+'"><img src="'+imgsrc+'"  itemprop="thumbnail"/></a></figure>';
+			}
 		document.getElementById("Gallery1").innerHTML = idiv;
     };
 	
