@@ -56,20 +56,43 @@
         <div class="gallery span12" style="margin-left:0px">
 			<ul class="unstyled">
 				<li>	
-					<div class="span4 gallery-item my-gallery" id="Gallery1">
+					<div class="span4 gallery-item my-gallery" itemscope itemtype="http://schema.org/ImageGallery" id="Gallery1">
+						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="Gallery/OpenDay2012/1.jpg" itemprop="contentUrl" data-size="960x640">
+								<img src="Gallery/OpenDay2012/1.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+							<figcaption itemprop="caption description">Image caption  1</figcaption>
+							<span class="project-details">
+								<strong>ParkC Open Day 2012</strong>
+								<p style="line-height:0px;margin-top:15px;margin-bottom:5px"></br>
+								<a href="gallery-single.htm" style="display:none;float:right"><small>See all...</small></a></p> 
+							</span>
+						</figure>
 					</div>
-					<script>
-					var num = 1;                                     
-					var len = 19; 
-					
-				(window.onload=function() { 
+<script>
+					var num = 2;
+					var arr = [];
+					var art = [];
+					var idiv = document.getElementById("Gallery1").innerHTML;
+function loader(img) {
+		
+        var imgH = this.naturalHeight;
+        var imgW = this.naturalWidth;
+        var imgsrc = this.src;
+		idiv += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + imgsrc+ '" itemprop="contentUrl" data-size="'+imgW+'x'+imgH+'"><img src="'+imgsrc+'"  itemprop="thumbnail"/></a></figure>';
+		document.getElementById("Gallery1").innerHTML = idiv;
+    };
+	
+	
+					do{arr.push('Gallery/OpenDay2012/' + num + '.jpg');
+					num++;}	while (num < 20);
+					for (var i = 0; i < arr.length; i++){
 					var img = new Image();
-					img.src = 'Gallery/OpenDay2012/' + num + '.jpg';
-					num = (num === len) ? 0 : ++num;  
-					});	
+					img.src = arr[i];
+					img.onload = loader;}			
 
-				
-					</script>
+
+</script>
 				</li>
 			
 				<li>
