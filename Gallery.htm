@@ -68,7 +68,7 @@ function loader(img) {
         var imgH = this.naturalHeight;
         var imgW = this.naturalWidth;
         var imgsrc = this.src;
-		if (imgsrc.indexOf("1.jpg") != -1 ){
+		if (imgsrc.indexOf("/1.jpg") != -1 ){
 		idiv += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + imgsrc+ '" itemprop="contentUrl" data-size="'+imgW+'x'+imgH+'"><img src="'+imgsrc+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2012</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">Thanking our participants</br></p> </span></figure>';		
 		} else {
 		idiv += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + imgsrc+ '" itemprop="contentUrl" data-size="'+imgW+'x'+imgH+'"><img src="'+imgsrc+'"  itemprop="thumbnail"/></a></figure>';
