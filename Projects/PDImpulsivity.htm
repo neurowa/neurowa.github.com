@@ -34,6 +34,7 @@
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.custom.js"></script>
+<script src="js/progressbar.min.js"></script>
 </head>
 
 <body class="home">
@@ -69,15 +70,61 @@
 					<img class="img-responsive img-rounded" style="max-width:100%;max-height:500px" src="Projects/Leon/Leon.png"></img>
 			</div>
 
-                <div class="span6" style="margin-left:0px">
-                    <h3 class="title-bg" style="margin:0px;line-height:18px;text-align:center">The Project</h3></br>
+<div class="span6" style="margin-left:0px">
+				<h3 class="title-bg" style="margin:0px;line-height:18px;text-align:center">The Project</h3>
 
-                    <p>Description of Leon's aims, project, methodology, progress, time running, and things learned etc., etc.
-					</br></br></br></br></br></br></br></br></br></br></p>
+				<p class="lead" style="margin-bottom:20px">Background:</p>
+				<p style="font-size:13px">
+					Approximately 13% of people with Parkinson’s experience significant issues with impulsive behaviours. However, currently used assessments do not capture the range and nature of impulsivity in PD. This contributes to the underdiagnoses of impulsivity issues in Parkinson’s, leaving these problematic behaviours untreated. PhD candidate Leon Booth is investigating the nature of impulsivity in Parkinson’s and the limitations of currently used measures. The aim of the project is to improve the diagnosis of impulsivity issues in Parkinson’s disease and subsequently provide better access to treatment options. 
+				</p>
+				<p class="lead" style="margin-bottom:20px">Methods:</p>
+				<p style="font-size:13px">
+					Participants will complete a series of questionnaires and behavioural tasks to measure their impulsive tendencies and insight into their behaviours. A nominated informant such as family member or spouse will also complete questionnaires regarding the person with Parkinson’s.  Scores on these various measures will be compared to investigate the following outcomes:</p>
+					<ul style="margin-bottom:10px;font-size:13px">
+						<li>Explore the usefulness of a currently used diagnostic impulsivity measure</li>
+						<li>Investigate the influence of a person’s insight in reporting their impulsive behaviours</li>
+						<li>Examine the relationships that exist between a range of different impulsivity measures, and</li>
+						<li>Explore the efficacy of using a nominated informant as a source of information</li>
+					</ul>
+				<p class="lead" style="margin-bottom:20px">Progress:</p>
+				<p style="font-size:13px">
+					The candidacy process is currently being finalised with the aim of beginning participant recruitment and testing early 2016. 
+				</p>
+
+					<div class="span2 percentcontainer" id="example-percent-container"></div>
+					<div class="span3" style="font-size:15px"><ul>
+						<li style="text-decoration:line-through">Candidacy</li>
+                        <li>Participant Recruitment</li>
+						<li>Participant Testing</li>
+						<li>Data Entry</li>
+						<li>Data Cleaning</li>
+						<li>Analysis</li>
+					</ul></div></br></br>
+					
+					<script>
+						var circle = new ProgressBar.Circle('#example-percent-container', {
+							color: '#0000ff',
+							strokeWidth: 5,
+							trailWidth: 3,
+							duration: 2500,
+							text: {
+								value: '10'
+							},
+							step: function(state, bar) {
+								bar.setText((bar.value() * 100).toFixed(0)+'%');
+							}
+						});
+
+						circle.animate(0.10)
+					</script>
+				
+				<div class="span6" style="font-size:13px;margin-left:0px"></br></br>
+				If you would like further information about this project, please contact Leon Booth at: 
+				<a href="mailto:Leon.Booth@synapselab.org" style="color:blue">Leon.Booth@synapselab.org</a></div>
+			
 
 
-
-                </div>
+			</div>
 
             </div>
 
