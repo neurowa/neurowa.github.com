@@ -128,8 +128,8 @@ function loader(img) {
                     var idiv3 = document.getElementById("Gallery3").innerHTML;
 					
 function loader(img) {
-		if (this.src.indexOf("/1.jpg") != -1 ){
-		idiv3 += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src+ '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2015</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">The Grand Re-Opening!</br></p> </span></figure>;		
+		if (this.src.indexOf("/1.JPG") != -1 ){
+		idiv3 += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src+ '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2015</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">The grand re-Opening!</br></p> </span></figure>';		
 		} else {
 		idiv3 += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src + '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a></figure>';
 			}
