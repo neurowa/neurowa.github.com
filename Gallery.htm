@@ -136,10 +136,14 @@ function loader(img) {
         document.getElementById("Gallery3").innerHTML = idiv3;
     };
 	
+function sortNumber(a,b) {
+    return a - b;
+}
+    
 	
 					do{arr.push('Gallery/OpenDay2015/' + num + '.JPG');
 					num++;}	while (num < 75);
-                    arr.sort();
+                    arr.sort(sortNumber);
 					for (var i = 0; i < arr.length; i++){
 					var img = new Image();
 					img.src = arr[i];
