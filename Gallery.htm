@@ -55,35 +55,6 @@
         ================================================== --> 
         <div class="gallery span12" style="margin-left:0px">
 			<ul class="unstyled">
-				<li>	
-					<div class="span4 gallery-item my-gallery" style="margin-left:0px" itemscope itemtype="http://schema.org/ImageGallery" id="Gallery1">
-					</div>
-<script>
-					var num = 1;
-					var arr = [];
-					var art = [];
-                    var idiv = document.getElementById("Gallery1").innerHTML;
-					
-function loader(img) {
-		if (this.src.indexOf("/1.jpg") != -1 ){
-		idiv += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src+ '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2012</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">Thanking our participants</br></p> </span></figure>';		
-		} else {
-		idiv += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src + '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a></figure>';
-			}
-        document.getElementById("Gallery1").innerHTML = idiv;
-    };
-	
-	
-					do{arr.push('Gallery/OpenDay2012/' + num + '.jpg');
-					num++;}	while (num < 20);
-					for (var i = 0; i < arr.length; i++){
-					var img = new Image();
-					img.src = arr[i];
-					img.onload = loader;}			
-
-
-</script>
-				</li>
 			
 				<li>
 					<div class="span4 gallery-item my-gallery" itemscope itemtype="http://schema.org/ImageGallery" id="Gallery2">
@@ -107,6 +78,68 @@ function loader(img) {
 	
 					do{arr.push('Gallery/OpenDay2011/' + num + '.jpg');
 					num++;}	while (num < 18);
+                    arr.sort();
+					for (var i = 0; i < arr.length; i++){
+					var img = new Image();
+					img.src = arr[i];
+					img.onload = loader;}			
+
+
+</script>
+				</li>
+                
+                <li>	
+					<div class="span4 gallery-item my-gallery" style="margin-left:0px" itemscope itemtype="http://schema.org/ImageGallery" id="Gallery1">
+					</div>
+<script>
+					var num = 1;
+					var arr = [];
+					var art = [];
+                    var idiv = document.getElementById("Gallery1").innerHTML;
+					
+function loader(img) {
+		if (this.src.indexOf("/1.jpg") != -1 ){
+		idiv += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src+ '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2012</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">Thanking our participants</br></p> </span></figure>;		
+		} else {
+		idiv += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src + '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a></figure>';
+			}
+        document.getElementById("Gallery1").innerHTML = idiv;
+    };
+	
+	
+					do{arr.push('Gallery/OpenDay2012/' + num + '.jpg');
+					num++;}	while (num < 20);
+                    arr.sort();
+					for (var i = 0; i < arr.length; i++){
+					var img = new Image();
+					img.src = arr[i];
+					img.onload = loader;}			
+
+
+</script>
+				</li>
+                <li>	
+					<div class="span4 gallery-item my-gallery" style="margin-left:0px" itemscope itemtype="http://schema.org/ImageGallery" id="Gallery3">
+					</div>
+<script>
+					var num = 1;
+					var arr = [];
+					var art = [];
+                    var idiv = document.getElementById("Gallery3").innerHTML;
+					
+function loader(img) {
+		if (this.src.indexOf("/1.jpg") != -1 ){
+		idiv += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src+ '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2015</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">The Grand Re-Opening!</br></p> </span></figure>;		
+		} else {
+		idiv += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src + '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a></figure>';
+			}
+        document.getElementById("Gallery3").innerHTML = idiv;
+    };
+	
+	
+					do{arr.push('Gallery/OpenDay2015/' + num + '.jpg');
+					num++;}	while (num < 20);
+                    arr.sort();
 					for (var i = 0; i < arr.length; i++){
 					var img = new Image();
 					img.src = arr[i];
@@ -116,34 +149,7 @@ function loader(img) {
 </script>
 				</li>
 				
-				<li>
-					<div class="span4 gallery-item my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-							  <a href="img/ParkC/OpenDay.jpg" itemprop="contentUrl" data-size="640x426">
-								  <img src="img/ParkC/OpenDay.jpg" itemprop="thumbnail" alt="Image description" />
-							  </a>
-							  <figcaption itemprop="caption description">Image caption 2</figcaption>
-								<span class="project-details" style="text-align:center">
-									<strong>Test 3</strong>
-									<p style="line-height:0px;margin-top:15px;margin-bottom:5px">Third Test</br>
-									<a href="gallery-single.htm" style="display:none;float:right"><small>See all...</small></a></p> 
-								</span>
-							</figure>
-							<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject">
-								<a href="img/ParkC/ParkC2.png" itemprop="contentUrl" data-size="759x509">
-									<img src="img/ParkC/ParkC2.png"  itemprop="thumbnail" alt="Image description" />
-								</a>
-								<figcaption itemprop="caption description">Image caption  1</figcaption>
-							</figure>
-							<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject">
-							  <a href="img/ParkC/balloon.jpg" itemprop="contentUrl" data-size="960x640">
-								  <img src="img/ParkC/balloon.jpg" style="display:none" itemprop="thumbnail" alt="Image description" />
-							  </a>
-							  <figcaption itemprop="caption description">Image caption 3</figcaption>
-							</figure>
-					</div>
-				</li>
 			</ul>
 
 
