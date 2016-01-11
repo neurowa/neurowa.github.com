@@ -99,12 +99,12 @@ function loader(img) {
 					
 function loader(img) {
 		if (this.src.indexOf("/1.jpg") != -1 ){
-		idiv += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src+ '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2012</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">Thanking our participants</br></p> </span></figure>;		
+		idiv += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src+ '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2012</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">Thanking our participants</br></p> </span></figure>';		
 		} else {
 		idiv += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src + '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a></figure>';
 			}
         document.getElementById("Gallery1").innerHTML = idiv;
-    };
+     };
 	
 	
 					do{arr.push('Gallery/OpenDay2012/' + num + '.jpg');
@@ -125,20 +125,20 @@ function loader(img) {
 					var num = 1;
 					var arr = [];
 					var art = [];
-                    var idiv = document.getElementById("Gallery3").innerHTML;
+                    var idiv3 = document.getElementById("Gallery3").innerHTML;
 					
 function loader(img) {
 		if (this.src.indexOf("/1.jpg") != -1 ){
-		idiv += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src+ '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2015</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">The Grand Re-Opening!</br></p> </span></figure>;		
+		idiv3 += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src+ '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a><span class="project-details" style="text-align:center"> <strong>ParkC Open Day 2015</strong> <p style="line-height:0px;margin-top:15px;margin-bottom:5px">The Grand Re-Opening!</br></p> </span></figure>;		
 		} else {
-		idiv += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src + '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a></figure>';
+		idiv3 += '<figure itemprop="associatedMedia" style="display:none" itemscope itemtype="http://schema.org/ImageObject"><a href="' + this.src + '" itemprop="contentUrl" data-size="'+this.naturalWidth+'x'+this.naturalHeight+'"><img src="'+this.src+'"  itemprop="thumbnail"/></a></figure>';
 			}
-        document.getElementById("Gallery3").innerHTML = idiv;
+        document.getElementById("Gallery3").innerHTML = idiv3;
     };
 	
 	
-					do{arr.push('Gallery/OpenDay2015/' + num + '.jpg');
-					num++;}	while (num < 20);
+					do{arr.push('Gallery/OpenDay2015/' + num + '.JPG');
+					num++;}	while (num < 75);
                     arr.sort();
 					for (var i = 0; i < arr.length; i++){
 					var img = new Image();
