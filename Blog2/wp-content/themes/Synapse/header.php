@@ -51,5 +51,6 @@
      
     <!-- Blog Content
     ================================================== --> 
-
+<div id="page" class="site">
+	<div class="site-inner">
     <div id="content" class="site-content"><!--Container row-->

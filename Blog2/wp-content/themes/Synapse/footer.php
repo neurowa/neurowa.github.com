@@ -1,6 +1,7 @@
 
 		</div><!-- .site-content -->
-
+</div>
+</div>
     </div> <!-- End Container -->
 
 <!-- Footer Area-->
