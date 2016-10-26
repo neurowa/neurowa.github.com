@@ -52,4 +52,4 @@
     <!-- Blog Content
     ================================================== --> 
 
-    <div class="row"><!--Container row-->
+    <div id="content" class="site-content"><!--Container row-->
