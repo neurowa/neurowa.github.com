@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?php?><!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js">
 <head>
 <base href="../../../../">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Synapse</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<?php endif; ?>
+<?php wp_head(); ?>
+    
 <!-- CSS
 ================================================== -->
 <link href='../../../../css/font.css' rel='stylesheet' type='text/css'>
@@ -37,7 +43,7 @@
 
 
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 	<div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
