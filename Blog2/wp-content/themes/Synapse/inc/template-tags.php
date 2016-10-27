@@ -20,7 +20,7 @@ if ( ! function_exists( 'twentysixteen_entry_meta' ) ) :
 function twentysixteen_entry_meta() {
 	if ( 'post' === get_post_type() ) {
 		$author_avatar_size = apply_filters( 'twentysixteen_author_avatar_size', 49 );
-		printf( '<span class="byline"><span class="author vcard"><span style="padding:10px">%1$s</span><span class="screen-reader-text">%2$s </span> <a class="url fn n" href="%3$s">%4$s</a></span></span></br>',
+		printf( '<span class="byline" style="padding-right:10px"><span class="author vcard"><span style="padding:10px">%1$s</span><span class="screen-reader-text">%2$s </span> <a class="url fn n" href="%3$s">%4$s</a></span></span>',
 			get_avatar( get_the_author_meta( 'user_email' ), $author_avatar_size ),
 			_x( 'Author', 'Used before post author name.', 'twentysixteen' ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
@@ -75,7 +75,7 @@ function twentysixteen_entry_date() {
 		get_the_modified_date()
 	);
 
-	printf( '<span class="posted-on"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark">%3$s</a></span>',
+	printf( '<span class="posted-on" style="padding-right:10px"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark">%3$s</a></span>',
 		_x( 'Posted on', 'Used before publish date.', 'twentysixteen' ),
 		esc_url( get_permalink() ),
 		$time_string
