@@ -21,7 +21,7 @@
 
 	<?php twentysixteen_post_thumbnail(); ?>
 
-	<div class="entry-content" style="background-color:#FFFFFF">
+	<div class="span6 entry-content" style="background-color:#f8f8f8">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
