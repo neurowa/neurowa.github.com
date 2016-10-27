@@ -38,7 +38,7 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
-	</div></br><!-- .entry-content -->
+	</div></br></br></br><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php twentysixteen_entry_meta(); ?>
