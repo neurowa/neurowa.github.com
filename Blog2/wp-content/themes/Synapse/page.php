@@ -13,8 +13,8 @@
 
 get_header(); ?>
 
-<div id="primary" class="span8 content-area">
-	<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+	<main id="main" class="span8 site-main" role="main">
 		<?php
 		// Start the loop.
 		while ( have_posts() ) : the_post();
