@@ -21,7 +21,7 @@
 
 	<?php twentysixteen_post_thumbnail(); ?>
 
-    </br><div class="span6 entry-content" style="background-color:#f8f8f8;float:left;margin-left:0px">
+    <div class="span6 entry-content" style="background-color:#f8f8f8;float:left;margin-left:0px">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
@@ -38,7 +38,7 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div></br><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php twentysixteen_entry_meta(); ?>
