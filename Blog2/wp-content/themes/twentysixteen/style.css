@@ -59,7 +59,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 html {
-	font-family: sans-serif;
+	font-family: "Oswald", sans-serif; 
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -304,7 +304,7 @@ input,
 select,
 textarea {
 	color: #1a1a1a;
-	font-family: Merriweather, Georgia, serif;
+	font-family: "Oswald", sans-serif; 
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.75;
@@ -558,24 +558,24 @@ td {
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 }
 
 :-moz-placeholder {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 }
 
 ::-moz-placeholder {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 	opacity: 1;
 	/* Since FF19 lowers the opacity of the placeholder by default */
 }
 
 :-ms-input-placeholder {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 }
 
 
@@ -678,7 +678,7 @@ textarea:focus {
 .post-password-form label {
 	color: #686868;
 	display: block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 	font-size: 13px;
 	font-size: 0.8125rem;
 	letter-spacing: 0.076923077em;
@@ -802,7 +802,7 @@ a:active {
 }
 
 .main-navigation {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 }
 
 .site-footer .main-navigation {
@@ -1056,7 +1056,7 @@ a:active {
 	border-top: 4px solid #1a1a1a;
 	border-bottom: 4px solid #1a1a1a;
 	clear: both;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 	margin: 0 7.6923% 3.5em;
 }
 
@@ -1082,7 +1082,7 @@ a:active {
 
 .post-navigation .post-title {
 	display: inline;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 	font-size: 23px;
 	font-size: 1.4375rem;
 	font-weight: 700;
@@ -1101,7 +1101,7 @@ a:active {
 
 .pagination {
 	border-top: 4px solid #1a1a1a;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 	font-size: 19px;
 	font-size: 1.1875rem;
 	margin: 0 7.6923% 2.947368421em;
@@ -1240,7 +1240,7 @@ a:active {
 	border-top: 1px solid #d1d1d1;
 	border-bottom: 1px solid #d1d1d1;
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1.6153846154;
@@ -1296,7 +1296,7 @@ a:active {
 	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
 	color: #21759b;
 	display: block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 	font-size: 14px;
 	font-weight: 700;
 	left: -9999em;
@@ -1309,7 +1309,7 @@ a:active {
 
 .logged-in .site .skip-link {
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-	font-family: "Open Sans", sans-serif;
+	font-family: "Oswald", sans-serif; 
 }
 
 .site .skip-link:focus {
@@ -1416,7 +1416,7 @@ blockquote:after,
 }
 
 .widget .widget-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", sans-serif; 
 	font-size: 16px;
 	font-size: 1rem;
 	letter-spacing: 0.046875em;
