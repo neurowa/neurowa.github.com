@@ -1,4 +1,5 @@
 <div id="foot" class="footer-container"><!-- Begin Footer -->
+    
     	<div class="container">
         	<div class="row footer-row">
                 <div class="span2 footer-col" style="float:left">
@@ -22,13 +23,37 @@
 					js.src=p+"://platform.twitter.com/widgets.js";
 					fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </div>
-                <div class="span3 footer-col" style="float:right">
+<script>
+    
+    function makeUL(array) {
+    // Create the list element:
+    var list = document.createElement('ul');
+
+    for(var i = 0; i < 5; i++) {
+        // Create the list item:
+        var li = document.createElement('li');
+        
+        var a = document.createElement('a');
+        
+        a.setAttribute("href",lnk[i]);
+
+        // Set its contents:
+        a.appendChild(document.createTextNode(array[i]));
+        
+        li.appendChild(a);
+
+        // Add it to the list:
+        list.appendChild(li);
+    }
+
+    // Finally, return the constructed list:
+    return list;
+}
+    document.getElementById('blg').appendChild(makeUL(title));
+</script>
+                
+                <div class="span3 footer-col" style="float:right" id="blg">
                     <h5>Latest Posts</h5>
-                     <ul class="post-list">
-                        <li><a href="Blog/Pain_Study.htm">Pain study wraps up data collection</a></li>
-                        <li><a href="Blog/Rew_Brain.htm">In The News: Rewiring the Brain</a></li>
-                        <li><a href="Blog/Blake_News.htm">Cognition Study Featured on WA News</a></li>
-                    </ul>
                 </div>
                 
             </div>

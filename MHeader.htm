@@ -39,6 +39,27 @@
 					}else{
 					$('.nav>li>a[href="' + result.split('.')[0] + '.htm' + '"]').parent().addClass('active');
 					};
+                        var tst = [];
+                        var title = [];
+                        var lnk = [];
+                        var spl = [];
+                    	$.get("Blog/titles.txt", function(data){
+                            tst = data.split("\n");
+                            for(var i = 0; i < tst.length;i++){
+                                if (parts.length == 1){
+                                    
+                                spl = tst[i].split(",");
+                                title.push(spl[0]);
+                                lnk.push('Blog/'+spl[1]+'.htm');
+                                    
+                                }else{
+                                    
+                                spl = tst[i].split(",");
+                                title.push(spl[0]);
+                                lnk.push('../Blog/'+spl[1]+'.htm');
+                                };
+                            };
+                             }); 
 					</script>
 					
 				</div>
